@@ -18,3 +18,12 @@ ghostty
 firefox
 dms-shell
 
+
+# installation of that software:
+
+`sudo pacman -Syu ghostty firefox dms-shell yay git`
+
+`yay -S mangowm-git`
+
+
+
