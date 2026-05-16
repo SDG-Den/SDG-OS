@@ -17,11 +17,15 @@ clone the repo and place the mango folder in your .config folder:
 ghostty
 firefox
 dms-shell
+nautilus
+brightnessctl
+pulseaudio
+pipewire
 
 
 # installation of that software:
 
-`sudo pacman -Syu ghostty firefox dms-shell yay git`
+`sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pulseaudio pipewire`
 
 `yay -S mangowm-git`
 
