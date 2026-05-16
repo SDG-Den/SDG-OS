@@ -10,5 +10,3 @@ source=~/.config/mango/windowrules.conf
 source=~/.config/mango/dms/colors.conf
 source=~/.config/mango/dms/layout.conf
 source=~/.config/mango/dms/outputs.conf
-
-source=./dms/cursor.conf

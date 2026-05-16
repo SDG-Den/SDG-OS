@@ -21,13 +21,14 @@ nautilus
 brightnessctl
 pulseaudio
 pipewire
+(aur)dsearch-bin
 
 
 # installation of that software:
 
 `sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pulseaudio pipewire`
 
-`yay -S mangowm-git`
+`yay -S mangowm-git dsearch-bin`
 
 
 
