@@ -117,6 +117,16 @@ you can open the mango config editor with super+m, this opens a terminal in whic
 this script has a variable for the editor, it uses micro by default, but you can change the line "app=micro" to any editor you'd like.
 
 
+# contributing
+
+anyone with an SDGCloud account can work on forks of this repository and send code in for review, just shoot me a message if you have something interesting for the config and i'll take a look at it! 
+
+
+# requesting features
+
+just message me on discord lmao. 
+
+
 
 # Updates:
 
