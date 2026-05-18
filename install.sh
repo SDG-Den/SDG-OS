@@ -20,6 +20,10 @@ mkdir -p ~/projects
 
 echo "source /home/$(whoami)/.config/sdgos/zshconfig.zsh" >> ~/.zshrc
 
+mv /home/$(whoami)/.zshrc /home/$(whoami)/.zshrc-old
+ln -sf /home/$(Whoami)/.config/sdgos/zshrc /home/$(whoami)
+mv /home/$(whoami)/.p10k.zsh /home/$(whoami)/.p10k.zsh-old
+ln -sf /home/$(Whoami)/.config/sdgos/p10k.zsh /home/$(whoami)
 
 chmod -R a+x ~/.config/sdgos
 
