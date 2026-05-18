@@ -2,7 +2,7 @@
 
 echo "installing pre-requisites"
 
-sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty stow
+sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty stow zoxide zsh zsh-theme-powerlevel10k eza
 
 yay -S mangowm-git dsearch-bin
 
@@ -15,6 +15,9 @@ fi
 stow .
 
 echo "on" > ~/.config/SDGupdate.state
+
+echo "source /home/$(whoami)/.config/sdgos/zshconfig.zsh" >> ~/.zshrc
+
 
 chmod -R a+x ~/.config/sdgos
 

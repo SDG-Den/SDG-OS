@@ -1,0 +1,26 @@
+theme = dankcolors
+
+background-opacity = 0.7
+
+command = /bin/zsh
+
+initial-command = /bin/zsh -c fastfetch && zsh 
+
+scrollback-limit = 999999
+
+link-url = true
+link-previews = true
+
+window-decoration = none
+
+focus-follows-mouse = true
+
+shell-integration = zsh
+
+
+
+keybind = ctrl+up=new_split:up
+keybind = ctrl+down=new_split:down
+keybind = ctrl+left=new_split:left
+keybind = ctrl+right=new_split:right
+keybind = ctrl+r=reload_config

@@ -101,11 +101,16 @@ grim
 satty
 fzf
 micro
+stow
+zoxide
+zsh
+zsh-theme-powerlevel10k
+eza
 
 
 # installation of that software:
 
-`sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty`
+`sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty stow zoxide zsh zsh-theme-powerlevel10k eza`
 
 `yay -S mangowm-git dsearch-bin`
 
@@ -115,6 +120,33 @@ micro
 you can open the mango config editor with super+m, this opens a terminal in which you can select a config file and see the contents of that config file. 
 
 this script has a variable for the editor, it uses micro by default, but you can change the line "app=micro" to any editor you'd like.
+
+
+# ghostty config
+
+SDG-OS ships with a ghostty config that syncs your theme with DMS, sets ghostty to use zsh and configure some basic keybinds for multi-window:
+ctrl+arrow keys for splitting the pane
+ctrl+r to reload the config
+
+you can exit a pane by simply typing exit. panes are auto-focused with the mouse and can be resized using mouse drags. 
+
+# zsh config
+
+zsh is set up with a couple of interesting tweaks:
+
+eza replaces the standard ls command and zoxide replaces the cd command, allowing you to more easily navigate your system.
+
+find has been replaced with a fzf implementation, and the command microfind will automatically open the selected file in micro. both of these have previews.
+
+lastly, zsh also has some suffix aliasses, which allow you to open specific filetypes in their prefered program by just entering the file as the command. 
+
+# installer TUIs
+
+SDG-OS comes with installer TUIs for both pacman and the AUR
+
+these can be spawned with super+y for pacman or super+shift+y for AUR
+
+alternatively, you can open them in the terminal using `pacgui` and `aurgui`
 
 
 # contributing
