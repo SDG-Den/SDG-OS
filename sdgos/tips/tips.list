@@ -1,0 +1,171 @@
+[SDG-OS Tips]: did you know? you can use SUPER+K to open the keybinds list
+[SDG-OS Tips]: Did you know? You can use SUPER+P to pin a window across workspaces
+[SDG-OS Tips]: Did you know? You can use SUPER+L to lock your session quickly
+[SDG-OS Tips]: Did you know? You can use SUPER+SPACE to open the application launcher
+[SDG-OS Tips]: Did you know? You can use SUPER+V to toggle the clipboard
+[SDG-OS Tips]: Did you know? You can use SUPER+I to toggle sleep inhibit mode
+[SDG-OS Tips]: Did you know? You can use SUPER+D to toggle the dock visibility
+[SDG-OS Tips]: Did you know? You can use SUPER+X to open the process list
+[SDG-OS Tips]: Did you know? You can use SUPER+N to open your notifications
+[SDG-OS Tips]: Did to know? You can use SUPER+S to toggle your settings menu
+[SDG-OS Tips]: Did you know? You can use SUPER+M to show the mangoWM config editor
+[SDG-OS Tips]: Did you know? You can use SUPER+Y to install packages via the GUI
+[SDG-OS Tips]: Did you know? You can use SUPER+SHIFT+Y to install AUR packages
+[SDG-OS Tips]: Did you know? You can use SUPER+R to reload your configuration
+[SDG-OS Tips]: Did you know? You can use SUPER+SHIFT+Q to exit mangoWM
+[SDG-OS Tips]: Did you know? You can use SUPER+T to float or unfloat the active window
+[SDG-OS Tips]: Did you know? You can use SUPER+F to fullscreen the active window
+[SDG-OS Tips]: Did you know? You can use SUPER+Q to close the active window
+[SDG-OS Tips]: Did you know? You can use SUPER+left/right/up/down to focus windows
+[SDG-OS Tips]: Did you know? You can use SUPER+Ctrl+left/right/up/down to swap panes
+[SDG-OS Tips]: Did you know? You can use SUPER+Alt+left/right/up/down to resize windows
+[SDG-OS Tips]: Did you know? You can use SUPER+SHIFT+[1-9] to move windows to specific workspaces
+[SDG-OS Tips]: Did you know? You can use SUPER+[1-9] to focus specific workspaces
+[SDG-OS Tips]: Did you know? You can use SUPER+SHIFT+up/down to exchange stack direction
+[SDG-OS Tips]: Did you know? You can use Ctrl+Arrow keys in Ghostty to split panes
+[SDG-OS Tips]: Did you know? You can use Ctrl+R in Ghostty to reload the configuration
+[SDG-OS Tips]: Did you know? You can use zoxide's 'cd' integration to jump between directories you've visited before using partial names with fzf
+[SDG-OS Tips]: Did you know? You can use 'pacgui' to launch the graphical package installer
+[SDG-OS Tips]: Did you know? You can use 'aurgui' to launch the AUR installation interface
+[SDG-OS Tips]: Did you know? You can use 'find' to search files with a beautiful preview via fzf and bat
+[SDG-OS Tips]: Did you know? You can use 'microfind' to quickly search for and open a file in micro using fzf
+[SDG-OS Tips]: Did you know? You can use 'lt' to view a directory in a tree-like format
+[SDG-OS Tips]: Did you know? You can use 'l.' to show only hidden dotfiles in your current directory
+[SDG‌-OS Tips]: Did you know? You can use '..' or '...' to navigate up directory levels quickly
+[SDG-OS Tips]: Did you know? You can use 'update' to run a full system upgrade with sudo pacman -Syu
+[SDG-OS Tips]: Did you know? You can use 'gitpkg' to quickly count installed -git packages
+[SDG-OS Tips]: Did you know? You can use 'please' as a shortcut for 'sudo'
+[SDG-OS Tips]: Did you know? You can use 'jctl' to view the most recent system errors via journalctl
+[SDG-OS Tips]: Did you know? Most file types like .json, .md, and .toml open directly in micro whn they're called in the terminal without any command
+[SDG-OS Tips]: Did you know? common image files like .png, .jpg and .webp open directly in satty when they're called in the terminal without any command
+[SDG-OS Tips]: Did you know? You can use "pacman -Ss package" to search for a package in the official repos
+[SDG-OS Tips]: Did you know? You can use "pacman -Si package" to see detailed info about a package
+[SDG-OS Tips]: Did you know? You can use "pacman -Qdt" to list orphaned packages (no longer required)
+[SDG-OS Tips]: Did you know? You can use "pacman -Rns package" to remove a package and its dependencies
+[SDG-OS Tips]: Did you know? You can use "pacman -Syu --needed" to upgrade only packages with updates available
+[SDG-OS Tips]: Did you know? You can use "pacman -Qe" to list explicitly installed packages
+[SDG-OS Tips]: Did you know? You can use "pacman -Qn" to list native packages (not from AUR)
+[SDG-OS Tips]: Did you know? You can use "pacman -Qm" to list packages installed from AUR
+[SDG-OS Tips]: Did you know? You can use "pacman -Ql package" to list all files installed by a package
+[SDG-OS Tips]: Did you know? You can use "pacman -Qo /path/to/file" to find which package owns a file
+[SDG-OS Tips]: Did you know? You can use "pacman -Scc" to clean all cached packages (use with caution)
+[SDG-OS Tips]: Did you know? You can use "pacman -Fy" to sync the file database for searching files
+[SDG-OS Tips]: Did you know? You can use "pacman -Fs filename" to search for a file in all packages
+[SDG-OS Tips]: Did you know? You can use "pacman -U /path/to/package.pkg.tar.zst" to install a local package
+[SDG-OS Tips]: Did you know? You can use "pacman -Sw package" to download a package without installing it
+[SDG-OS Tips]: Did you know? You can use "pacman -Sc" to clean old package versions from the cache
+[SDG-OS Tips]: Did you know? You can use "pacman -Qk package" to check for missing files in a package
+[SDG-OS Tips]: Did you know? You can use "pacman -Qkk package" to check for extra files in a package
+[SDG-OS Tips]: Did you know? You can use "pacman -Qii package" to see extended info about an installed package
+[SDG-OS Tips]: Did you know? You can use "pacman -Qs keyword" to search for installed packages matching a keyword
+[SDG-OS Tips]: Did you know? You can use "pacman -S --asdeps package" to install a package as a dependency
+[SDG-OS Tips]: Did you know? You can use "pacman -S --overwrite='*' package" to force overwrite conflicting files
+[SDG-OS Tips]: Did you know? You can use "pacman -S --needed package" to install a package only if not already installed
+[SDG-OS Tips]: Did you know? You can use "pacman -S --noconfirm package" to skip confirmation prompts
+[SDG-OS Tips]: Did you know? You can use "pacman -Rc package" to remove a package and its reverse dependencies
+[SDG-OS Tips]: Did you know? You can use "pacman -Sy archlinux-keyring" to update the Arch Linux keyring if pacman fails
+[SDG-OS Tips]: Did you know? You can use "pacman -Syy" to force a refresh of the package database
+[SDG-OS Tips]: Did you know? You can use "pacman -Syyu" to force a full sync and upgrade (use with caution)
+[SDG-OS Tips]: Did you know? You can use "pacman -S --dbonly" to update the package database without upgrading
+[SDG-OS Tips]: Did you know? You can use "pacman -S --debug" to enable debug output for troubleshooting
+[SDG-OS Tips]: Did you know? You can use "pacman -S --overwrite='filepath'" to resolve file conflicts during installation
+[SDG-OS Tips]: Did you know? You can use "man command" to read the manual page for any command
+[SDG-OS Tips]: Did you know? You can use "tldr command" to see practical examples for a command
+[SDG-OS Tips]: Did you know? You can use "btop" to view and manage system processes interactively
+[SDG-OS Tips]: Did you know? You can use "journalctl -xe" to view system logs with details
+[SDG-OS Tips]: Did you know? You can use "df -h" to check disk space usage in a human-readable format
+[SDG-OS Tips]: Did you know? You can use "du -sh *" to check the size of files and directories in the current folder
+[SDG-OS Tips]: Did you know? You can use "ncdu" to analyze disk usage interactively
+[SDG-OS Tips]: Did you know? You can use "systemctl status" to check the status of system services
+[SDG-OS Tips]: Did you know? You can use "systemctl enable --now service" to enable and start a service immediately
+[SDG-OS Tips]: Did you know? You can use "systemctl disable --now service" to disable and stop a service immediately
+[SDG-OS Tips]: Did you know? You can use "uptime" to see how long the system has been running
+[SDG-OS Tips]: Did you know? You can use "uname -a" to see detailed system information
+[SDG-OS Tips]: Did you know? You can use "lscpu" to see detailed CPU information
+[SDG-OS Tips]: Did you know? You can use "lsblk" to list all block devices (disks and partitions)
+[SDG-OS Tips]: Did you know? You can use "free -h" to check memory usage in a human-readable format
+[SDG-OS Tips]: Did you know? You can use "dmesg" to view kernel ring buffer messages for debugging
+[SDG-OS Tips]: Did you know? You can use "strace command" to trace system calls and signals for a command
+[SDG-OS Tips]: Did you know? You can use "lsof" to list open files and processes using them
+[SDG-OS Tips]: Did you know? You can use "ss -tulnp" to list all listening ports and associated processes
+[SDG-OS Tips]: Did you know? You can use "ip a" to list all network interfaces and their details
+[SDG-OS Tips]: Did you know? You can use "ping example.com" to test network connectivity to a host
+[SDG-OS Tips]: Did you know? You can use "mtr example.com" to combine ping and traceroute for network diagnostics
+[SDG-OS Tips]: Did you know? You can use "curl ifconfig.me" to quickly check your public IP address
+[SDG-OS Tips]: Did you know? You can use "tar -czvf archive.tar.gz /path" to create a compressed tar archive
+[SDG-OS Tips]: Did you know? You can use "scp file user@host:/path" to securely copy files over SSH
+[SDG-OS Tips]: Did you know? You can use "rsync -avz source/ destination/" to sync directories efficiently
+[SDG-OS Tips]: Did you know? You can use "chmod +x script" to make a script executable
+[SDG-OS Tips]: Did you know? You can use "chown user:group file" to change the owner and group of a file
+[SDG-OS Tips]: Did you know? You can use "grep -r 'pattern' /path" to search for a text pattern in files
+[SDG-OS Tips]: Did you know? You can use "sed -i 's/old/new/g' file" to replace text in a file
+[SDG-OS Tips]: Did you know? You can use "awk '{print $1}' file" to print the first column of a file
+[SDG-OS Tips]: Did you know? You can use "xargs" to build and execute commands from standard input
+[SDG-OS Tips]: Did you know? You can use "cd foo" to jump to a directory containing "foo" in its name with zoxide
+[SDG-OS Tips]: Did you know? You can use "cd foo bar" to jump to a directory containing both "foo" and "bar" with zoxide
+[SDG-OS Tips]: Did you know? You can use "cd -" to jump back to the previous directory with zoxide
+[SDG-OS Tips]: Did you know? You can use "cd ~" to jump to your home directory with zoxide
+[SDG-OS Tips]: Did you know? You can use "cd /" to jump to the root directory with zoxide
+[SDG-OS Tips]: Did you know? You can use "cd .." to jump up one directory level with zoxide
+[SDG-OS Tips]: Did you know? You can use "cd -- list" to see your most frequently visited directories in zoxide
+[SDG-OS Tips]: Did you know? You can use "cd -- purge" to remove directories no longer on your filesystem from zoxide's database
+[SDG-OS Tips]: Did you know? You can use "cd -- query foo" to see all directories matching "foo" without jumping
+[SDG-OS Tips]: Did you know? You can use "!!" to repeat the last command in zsh
+[SDG-OS Tips]: Did you know? You can use "!$" to reference the last argument of the previous command in zsh
+[SDG-OS Tips]: Did you know? You can use "cd -" to switch to the previous directory in zsh
+[SDG-OS Tips]: Did you know? You can use "ls "/*.txt" to recursively list all .txt files in zsh
+[SDG-OS Tips]: Did you know? You can use "=command" (e.g., "=ls") to see the full path of a command in zsh
+[SDG-OS Tips]: Did you know? You can use "alt+." to insert the last argument of the previous command in zsh
+[SDG-OS Tips]: Did you know? You can use "alt+?" to search backward in zsh's history
+[SDG-OS Tips]: Did you know? You can use "fc" to edit and re-run the last command in zsh
+[SDG-OS Tips]: Did you know? You can use "history -i" to incrementally search your command history in zsh
+[SDG-OS Tips]: Did you know? you can use the command "cmdhist" to interactively search through past commands and send them back to the terminal input
+[SDG-OS Tips]: Did you know? You can use "print -z" to add a command to the buffer without executing it in zsh
+[SDG-OS Tips]: Did you know? You can use "zsh-stat" to check your zsh version and configuration details
+[SDG-OS Tips]: Did you know? You can use "zsh-add-file" to source a file temporarily in your zsh session
+[SDG-OS Tips]: Did you know? You can use "zsh-remove-file" to unsource a file from your zsh session
+[SDG-OS Tips]: Did you know? You can use "zsh-watch" to monitor a file for changes and re-source it in zsh
+[SDG-OS Tips]: Did you know? You can use Ctrl+Shift+T to open a new tab in ghostty 
+[SDG-OS Tips]: Did you know? You can use Ctrl+Shift+W to close the current tab in ghostty
+[SDG-OS Tips]: Did you know? You can use Ctrl+Shift+F to search for text in ghostty's scrollback
+[SDG-OS Tips]: Did you know? You can use Ctrl+Shift+C and Ctrl+Shift+V for copy/paste in ghostty
+[SDG-OS Tips]: Did you know? You can use Ctrl+Shift+P to open ghostty's command palette
+[SDG-OS Tips]: Did you know? You can use Ctrl+Shift++ and Ctrl+Shift+- to increase/decrease font size in ghostty
+[SDG-OS Tips]: Did you know? You can use "ls" to list files and directories in the current folder
+[SDG-OS Tips]: Did you know? You can use "pwd" to print the current working directory
+[SDG-OS Tips]: Did you know? You can use "mkdir" to create a new directory
+[SDG-OS Tips]: Did you know? You can use "cd" to change directories
+[SDG-OS Tips]: Did you know? You can use "rmdir" to delete empty directories
+[SDG-OS Tips]: Did you know? You can use "cat" to display file contents
+[SDG-OS Tips]: Did you know? You can use "cp" to copy files or directories
+[SDG-OS Tips]: Did you know? You can use "mv" to move or rename files
+[SDG-OS Tips]: Did you know? You can use "rm" to delete files permanently
+[SDG-OS Tips]: Did you know? You can use "uname" to display system information
+[SDG-OS Tips]: Did you know? You can use "locate" to find files using a database
+[SDG-OS Tips]: Did you know? You can use "touch" to create empty files
+[SDG-OS Tips]: Did you know? You can use "ln" to create links between files
+[SDG-OS Tips]: Did you know? You can use "clear" to clear the terminal screen
+[SDG-OS Tips]: Did you know? You can use "ps" to display running processes
+[SDG-OS Tips]: Did you know? You can use "man" to display command manuals
+[SDG-OS Tips]: Did you know? You can use "grep" to search text patterns in files
+[SDG-OS Tips]: Did you know? You can use "echo" to display text in the terminal
+[SDG-OS Tips]: Did you know? You can use "wget" to download files from the internet
+[SDG-OS Tips]: Did you know? You can use "whoami" to display the current user
+[SDG-OS Tips]: Did you know? You can use "sort" to sort file contents 
+[SDG-OS Tips]: Did you know? You can use "cal" to display the calendar 
+[SDG-OS Tips]: Did you know? You can use "whereis" to locate command files
+[SDG-OS Tips]: Did you know? You can use "df" to display disk space usage
+[SDG-OS Tips]: Did you know? You can use "wc" to count words, lines, and characters in a file
+[SDG-OS Tips]: Did you know? You can use Tab to auto-complete commands and filenames in the terminal
+[SDG-OS Tips]: Did you know? You can use Ctrl+C to stop a running command in the terminal
+[SDG-OS Tips]: Did you know? You can use Ctrl+Z to suspend a running command and return to the shell
+[SDG-OS Tips]: Did you know? You can use Ctrl+D to exit the current shell session
+[SDG-OS Tips]: Did you know? You can use Ctrl+L to clear the terminal screen (same as `clear`)
+[SDG-OS Tips]: Did you know? You can use Up/Down Arrow to navigate through command history
+[SDG-OS Tips]: Did you know? You can use "sudo !!" to re-run the last command with sudo
+[SDG-OS Tips]: Did you know? You can use "!! | grep "pattern"" to search the output of the last command
+[SDG-OS Tips]: Did you know? You can use "> file.txt" to redirect command output to a file
+[SDG-OS Tips]: Did you know? You can use ">> file.txt" to append command output to a file
+[SDG-OS Tips]: Did you know? You can use "|" to pipe the output of one command to another (e.g., `ls | grep "file"`)
+[SDG-OS Tips]: Did you know? You can open the overview by moving your mouse to the bottom left corner of the screen.
+

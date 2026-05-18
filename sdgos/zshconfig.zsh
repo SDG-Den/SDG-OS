@@ -25,8 +25,13 @@ alias apt='man pacman'
 alias apt-get='man pacman'
 alias please='sudo'
 alias jctl="journalctl -p 3 -xb"
+alias cmdhist='CMD=$(history -i | fzf | sed "s/.*:..//"); sleep 0.1 && wtype $CMD'
+alias tipme='shuf -n 1 ~/.config/sdgos/tips/tips.list'
+alias alltips='cat ~/.config/sdgos/tips/tips.list | fzf'
 EDITOR=micro
 IMAGEPROGRAM='satty --filename'
+TIPS=$(cat ~/.config/sdgos/tips/tips.list)
+
 
 ## filetype aliases, default-opens them with the set program
 alias -s json=$EDITOR

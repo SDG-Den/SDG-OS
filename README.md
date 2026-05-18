@@ -106,11 +106,12 @@ zoxide
 zsh
 zsh-theme-powerlevel10k
 eza
+kanshi
 
 
 # installation of that software:
 
-`sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty stow zoxide zsh zsh-theme-powerlevel10k eza`
+`sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty stow zoxide zsh zsh-theme-powerlevel10k eza kanshi`
 
 `yay -S mangowm-git dsearch-bin`
 
@@ -147,6 +148,14 @@ SDG-OS comes with installer TUIs for both pacman and the AUR
 these can be spawned with super+y for pacman or super+shift+y for AUR
 
 alternatively, you can open them in the terminal using `pacgui` and `aurgui`
+
+# Tips
+
+SDG-OS comes with a built in tips system
+a random tip is shown when ghostty is opened as well as when the "tipme" command is ran
+you can also see all tips via fzf using the "alltips" command
+lastly, you'll get a notification popup with a random tip when you press SUPER+0
+
 
 
 # contributing
