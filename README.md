@@ -1,6 +1,14 @@
 # SDG-OS
 
-mangoWC dotfiles with DMS integration
+mangoWC dotfiles with DMS integration as well as a couple of other things.
+
+custom stuff:
+- pacman and AUR TUIs
+- tips
+- auto-update
+- mango configuration manager TUI
+- project manager TUI
+- screenshots scripts 
 
 ## auto-install
 
@@ -157,6 +165,25 @@ you can also see all tips via fzf using the "alltips" command
 lastly, you'll get a notification popup with a random tip when you press SUPER+0
 
 
+# project manager TUI
+
+SDG-OS comes with an interactive script bound to super+shift+tab, this will preview the paths to all of the git repositories within your projects directory (default ~/projects)
+
+on the right side, you'll see the contents of that git repository as well as the README.md file. 
+
+when you select a repository, the screen will close and in its place, an instance of VSCode opens with that repository already selected. 
+
+to change your projects dir, you can do the following:
+
+`echo "MyProjects/Subdir" > ~/.config/projectdir.state`
+
+this will set your projects dir to /home/YourUserName/MyProjects/Subdir
+
+you cannot set the projects dir outside of your home folder, it is also not advised to set it directly to your home folder as including .local will cause it to include all your AUR packages.
+
+
+
+
 
 # contributing
 
@@ -170,6 +197,8 @@ just message me on discord lmao.
 
 
 # Updates:
+
+18-05-2026 - added tips, better ghostty and zsh configuration and a project manager TUI to open your github repo's in VSCode. 
 
 17-05-2026 - added auto-updater as well as install script.
 

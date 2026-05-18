@@ -15,6 +15,8 @@ fi
 stow . -t /home/$(whoami)/.config/
 
 echo "on" > ~/.config/SDGupdate.state
+echo "projects" > ~/.config/projectdir.state
+mkdir -p ~/projects
 
 echo "source /home/$(whoami)/.config/sdgos/zshconfig.zsh" >> ~/.zshrc
 
