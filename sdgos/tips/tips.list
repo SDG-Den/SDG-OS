@@ -113,7 +113,7 @@
 [SDG-OS Tips]: Did you know? You can use "!!" to repeat the last command in zsh
 [SDG-OS Tips]: Did you know? You can use "!$" to reference the last argument of the previous command in zsh
 [SDG-OS Tips]: Did you know? You can use "cd -" to switch to the previous directory in zsh
-[SDG-OS Tips]: Did you know? You can use "ls "/*.txt" to recursively list all .txt files in zsh
+[SDG-OS Tips]: Did you know? You can use "ls ./*.txt" to list all .txt files in the current directory in zsh
 [SDG-OS Tips]: Did you know? You can use "=command" (e.g., "=ls") to see the full path of a command in zsh
 [SDG-OS Tips]: Did you know? You can use "alt+." to insert the last argument of the previous command in zsh
 [SDG-OS Tips]: Did you know? You can use "alt+?" to search backward in zsh's history
@@ -121,10 +121,6 @@
 [SDG-OS Tips]: Did you know? You can use "history -i" to incrementally search your command history in zsh
 [SDG-OS Tips]: Did you know? you can use the command "cmdhist" to interactively search through past commands and send them back to the terminal input
 [SDG-OS Tips]: Did you know? You can use "print -z" to add a command to the buffer without executing it in zsh
-[SDG-OS Tips]: Did you know? You can use "zsh-stat" to check your zsh version and configuration details
-[SDG-OS Tips]: Did you know? You can use "zsh-add-file" to source a file temporarily in your zsh session
-[SDG-OS Tips]: Did you know? You can use "zsh-remove-file" to unsource a file from your zsh session
-[SDG-OS Tips]: Did you know? You can use "zsh-watch" to monitor a file for changes and re-source it in zsh
 [SDG-OS Tips]: Did you know? You can use Ctrl+Shift+T to open a new tab in ghostty 
 [SDG-OS Tips]: Did you know? You can use Ctrl+Shift+W to close the current tab in ghostty
 [SDG-OS Tips]: Did you know? You can use Ctrl+Shift+F to search for text in ghostty's scrollback
