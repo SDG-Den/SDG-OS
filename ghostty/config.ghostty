@@ -23,8 +23,8 @@ split-inherit-working-directory = true
 
 
 
-keybind = ctrl+up=new_split:up
-keybind = ctrl+down=new_split:down
-keybind = ctrl+left=new_split:left
-keybind = ctrl+right=new_split:right
+keybind = alt+up=new_split:up
+keybind = alt+down=new_split:down
+keybind = alt+left=new_split:left
+keybind = alt+right=new_split:right
 keybind = ctrl+r=reload_config

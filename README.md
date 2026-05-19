@@ -198,6 +198,8 @@ just message me on discord lmao.
 
 # Updates:
 
+19-05-2026 - updated ghostty config to use alt+arrows instead of ctrl+arrows for panes, added super+alt+numbers to toggle workspaces for multi-workspace view
+
 18-05-2026 - added tips, better ghostty and zsh configuration and a project manager TUI to open your github repo's in VSCode. 
 
 17-05-2026 - added auto-updater as well as install script.

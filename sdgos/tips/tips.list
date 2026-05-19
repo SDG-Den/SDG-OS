@@ -22,7 +22,7 @@
 [SDG-OS Tips]: Did you know? You can use SUPER+SHIFT+[1-9] to move windows to specific workspaces
 [SDG-OS Tips]: Did you know? You can use SUPER+[1-9] to focus specific workspaces
 [SDG-OS Tips]: Did you know? You can use SUPER+SHIFT+up/down to exchange stack direction
-[SDG-OS Tips]: Did you know? You can use Ctrl+Arrow keys in Ghostty to split panes
+[SDG-OS Tips]: Did you know? You can use Alt+Arrow keys in Ghostty to split panes
 [SDG-OS Tips]: Did you know? You can use Ctrl+R in Ghostty to reload the configuration
 [SDG-OS Tips]: Did you know? You can use zoxide's 'cd' integration to jump between directories you've visited before using partial names with fzf
 [SDG-OS Tips]: Did you know? You can use 'pacgui' to launch the graphical package installer
