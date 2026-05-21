@@ -134,6 +134,7 @@
 [SDG-OS Tips]: Did you know? You can use "rmdir" to delete empty directories
 [SDG-OS Tips]: Did you know? You can use "cat" to display file contents
 [SDG-OS Tips]: Did you know? You can use "cp" to copy files or directories
+[SDG-OS Tips]: did you know? you can use ** followed by the TAB key in your command line to fzf for the argument. 
 [SDG-OS Tips]: Did you know? You can use "mv" to move or rename files
 [SDG-OS Tips]: Did you know? You can use "rm" to delete files permanently
 [SDG-OS Tips]: Did you know? You can use "uname" to display system information

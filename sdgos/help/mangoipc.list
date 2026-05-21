@@ -1,0 +1,26 @@
+## Introduction
+this menu shows you mango IPC options in the following format
+command         | example                   | description
+you can search through these.
+
+mmsg -Q         | mmsg -q                   | quit mangoWM
+mmsg -w         | mmsg -w -g -O             | the -w flag "watches" the other flags, giving you constant updates. 
+mmsg -g         | mmsg -g                   | gets *all* information
+mmsg -g         | mmsg -g -O                | the -g flag gets information, a second flag determines the info to get
+mmsg -g         | mmsg -g -O                | gets a list of monitor outputs
+mmsg -g         | mmsg -g -T                | gets the number of tags
+mmsg -g         | mmsg -g -L                | gets all available layouts in shorthand
+mmsg -g         | mmsg -g -t                | get tag information
+mmsg -g         | mmsg -g -l                | get the current layout for each monitor
+mmsg -g         | mmsg -g -c                | get information of the most recent focused client on each monitor
+mmsg -g         | mmsg -g -m                | get fullscreen state for all monitors
+mmsg -g         | mmsg -g -f                | get floating state for all monitors
+mmsg -g         | mmsg -g -x                | get the position and size for the most recent focused client per monitor
+mmsg -g         | mmsg -g -k                | gets the current keyboard layout
+mmsg -g         | mmsg -g -b                | gets the current keybind mode
+mmsg -g         | mmsg -g -A                | gets the current scale factor for all monitors
+mmsg -s         | mmsg -s -t 1              | the -s flag sets information, a second flag determines what to set.
+mmsg -s         | mmsg -s -t 2              | set tags, 1 = switch to 1, 2+ = add 2 to view, 2- = remove 2, 2^ = toggle tag 2
+mmsg -s         | mmsg -s -l DW             | sets layout
+mmsg -o         | mmsg -s -l DW -o DP-1     | selects a specific monitor for set commands
+mmsg -d         | mmsg -d <dispatcher>      | runs any keybind dispatcher, see the dispatcher list. 

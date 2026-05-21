@@ -1,7 +1,5 @@
 
 ## command aliases
-alias pacgui=~/.config/sdgos/tuis/pkg-install.sh
-alias aurgui=~/.config/sdgos/tuis/aur-install.sh
 alias find="fzf --layout=reverse --preview='bat {}'"
 alias microfind='micro $(pwd)/$(fzf --layout=reverse --preview="bat {}")'
 alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
@@ -28,6 +26,16 @@ alias jctl="journalctl -p 3 -xb"
 alias cmdhist='CMD=$(history -i | fzf | sed "s/.*:..//"); sleep 0.1 && wtype $CMD'
 alias tipme='shuf -n 1 ~/.config/sdgos/tips/tips.list'
 alias alltips='cat ~/.config/sdgos/tips/tips.list | fzf'
+
+## tools
+alias pacgui=~/.config/sdgos/tuis/pkg-install.sh
+alias aurgui=~/.config/sdgos/tuis/aur-install.sh
+alias git-projects=~/.config/sdgos/tuis/project.select.sh
+alias mangoconf=~/.config/sdgos/mango-config.sh
+alias documentation=~/.config/sdgos/tuis/documentation.sh
+alias tldrtui=~/.config/sdgos/help/cmd-help.sh
+alias helptui=~/.config/sdgos/help/help.sh
+
 EDITOR=micro
 IMAGEPROGRAM='satty --filename'
 TIPS=$(cat ~/.config/sdgos/tips/tips.list)
@@ -49,3 +57,4 @@ alias -s jpeg=$IMAGEPROGRAM
 alias -s webp=$IMAGEPROGRAM
 
 eval "$(zoxide init zsh --cmd cd )"
+source <(fzf --zsh)
