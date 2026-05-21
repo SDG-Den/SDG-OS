@@ -2,7 +2,7 @@
 
 echo "installing pre-requisites"
 
-sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty stow zoxide zsh zsh-theme-powerlevel10k eza kanshi
+sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi
 
 yay -S mangowm-git dsearch-bin
 
