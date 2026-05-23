@@ -1,0 +1,50 @@
+{
+  "catWidget": {
+    "enabled": false
+  },
+  "dankObsidian": {
+    "enabled": true,
+    "isFlatpak": false,
+    "noTrigger": false,
+    "trigger": ""
+  },
+  "dankPinentry": {
+    "enabled": true
+  },
+  "imageConverter": {
+    "enabled": true
+  },
+  "sshConnections": {
+    "enabled": true,
+    "terminal": "ghostty"
+  },
+  "usbManager": {
+    "enabled": true
+  },
+  "dankActions": {
+    "enabled": true,
+    "variants": [
+      {
+        "icon": "none",
+        "displayText": "",
+        "displayCommand": "shuf -n 1 ~/.config/sdgos/tips/tips.list | cut -d '?' -f 2",
+        "clickCommand": "",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 15,
+        "showIcon": false,
+        "showText": true,
+        "visibilityCommand": "",
+        "visibilityInterval": 0,
+        "id": "variant_1779445455419",
+        "name": "SDGOS-Tips"
+      }
+    ]
+  },
+  "dankKDEConnect": {
+    "enabled": true
+  },
+  "dankHooks": {
+    "enabled": true
+  }
+}

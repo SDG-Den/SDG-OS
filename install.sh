@@ -2,7 +2,7 @@
 
 echo "installing pre-requisites"
 
-sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi
+sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd
 
 yay -S mangowm-git dsearch-bin
 
@@ -23,12 +23,10 @@ cp -r /home/$(whoami)/SDG-OS/ghostty /home/$(whoami)/.config
 echo "projects" > ~/.config/projectdir.state
 mkdir -p ~/projects
 
-echo "source /home/$(whoami)/.config/sdgos/zshconfig.zsh" >> ~/.zshrc
-
 mv /home/$(whoami)/.zshrc /home/$(whoami)/.zshrc-old-$(date %b%D)
-ln -sf /home/$(Whoami)/.config/sdgos/zshrc /home/$(whoami)
+cp /home/$(Whoami)/.config/sdgos/zshrc /home/$(whoami)/.zshrc
 mv /home/$(whoami)/.p10k.zsh /home/$(whoami)/.p10k.zsh-old-$(date %b%D)
-ln -sf /home/$(Whoami)/.config/sdgos/p10k.zsh /home/$(whoami)
+cp /home/$(Whoami)/.config/sdgos/p10k.zsh /home/$(whoami)/.p10k.zsh
 
 chmod -R a+x ~/.config/sdgos
 

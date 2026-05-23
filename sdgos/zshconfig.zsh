@@ -39,6 +39,7 @@ alias helptui=~/.config/sdgos/help/help.sh
 EDITOR=micro
 IMAGEPROGRAM='satty --filename'
 TIPS=$(cat ~/.config/sdgos/tips/tips.list)
+SHELL=/bin/zsh
 
 
 ## filetype aliases, default-opens them with the set program
