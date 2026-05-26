@@ -21,7 +21,6 @@ alias update='sudo pacman -Syu'
 alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'
 alias apt='man pacman'
 alias apt-get='man pacman'
-alias please='sudo'
 alias jctl="journalctl -p 3 -xb"
 alias cmdhist='CMD=$(history -i | fzf | sed "s/.*:..//"); sleep 0.1 && wtype $CMD'
 alias tipme='shuf -n 1 ~/.config/sdgos/tips/tips.list'
@@ -41,7 +40,13 @@ IMAGEPROGRAM='satty --filename'
 TIPS=$(cat ~/.config/sdgos/tips/tips.list)
 SHELL=/bin/zsh
 
-
+function plz() {
+    if [ -z "$1" ]; then
+        sudo $(fc -ln 1 | tail -1)
+    else
+        sudo "$@"
+    fi
+}
 ## filetype aliases, default-opens them with the set program
 alias -s json=$EDITOR
 alias -s yaml=$EDITOR
