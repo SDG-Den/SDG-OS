@@ -2,7 +2,7 @@
 
 echo "installing pre-requisites"
 
-sudo pacman -Syu ghostty shelly firefox dms-shell yay git nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd
+sudo pacman -Syu ghostty shelly firefox dms-shell yay git nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme hyprshot grim satty code shelly zoxide zsh zsh-theme-powerlevel10k eza kanshi ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd
 
 yay -S mangowm-git dsearch-bin
 
@@ -43,8 +43,8 @@ if [[ ! $REPLY =~ ^[Nn]$ ]]; then
     bash -c "~/projects/unipkg/install.sh"
     mkdir -p ~/.local/share/dotfile-git-sync
     cp ~/projects/dotfile-git-sync/dotfile-git-sync ~/.local/share/dotfile-git-sync
-    sudo ln -sf /home/$(whoami)/.local/share/dotfiles-git-sync/dotfiles-git-sync /usr/bin
-    chmod a+x ~/.local/share/dotfiles-git-sync/dotfiles-git-sync
+    sudo ln -sf /home/$(whoami)/.local/share/dotfile-git-sync/dotfile-git-sync /usr/bin
+    chmod a+x ~/.local/share/dotfiles-git-sync/dotfile-git-sync
 
 else
     echo "optional scripts skipped, you can always install them manually later."
