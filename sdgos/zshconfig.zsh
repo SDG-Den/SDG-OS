@@ -35,10 +35,10 @@ alias documentation=~/.config/sdgos/tuis/documentation.sh
 alias tldrtui=~/.config/sdgos/help/cmd-help.sh
 alias helptui=~/.config/sdgos/help/help.sh
 
-EDITOR=micro
-IMAGEPROGRAM='satty --filename'
-TIPS=$(cat ~/.config/sdgos/tips/tips.list)
-SHELL=/bin/zsh
+export EDITOR=micro
+export IMAGEPROGRAM='satty --filename'
+export TIPS=$(cat ~/.config/sdgos/tips/tips.list)
+export SHELL=/bin/zsh
 
 function plz() {
     if [ -z "$1" ]; then
@@ -61,6 +61,7 @@ alias -s png=$IMAGEPROGRAM
 alias -s jpg=$IMAGEPROGRAM
 alias -s jpeg=$IMAGEPROGRAM
 alias -s webp=$IMAGEPROGRAM
+alias -s nix=$EDITOR
 
 eval "$(zoxide init zsh --cmd cd )"
 source <(fzf --zsh)
