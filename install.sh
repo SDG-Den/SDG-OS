@@ -24,9 +24,9 @@ echo "projects" > ~/.config/projectdir.state
 mkdir -p ~/projects
 
 mv /home/$(whoami)/.zshrc /home/$(whoami)/.zshrc-old-$RANDOM
-cp /home/$(Whoami)/.config/sdgos/zshrc /home/$(whoami)/.zshrc
+cp /home/$(whoami)/.config/sdgos/zshrc /home/$(whoami)/.zshrc
 mv /home/$(whoami)/.p10k.zsh /home/$(whoami)/.p10k.zsh-old-$RANDOM
-cp /home/$(Whoami)/.config/sdgos/p10k.zsh /home/$(whoami)/.p10k.zsh
+cp /home/$(whoami)/.config/sdgos/p10k.zsh /home/$(whoami)/.p10k.zsh
 
 chmod -R a+x ~/.config/sdgos
 
