@@ -28,13 +28,8 @@ run the install script
 
 `./install.sh`
 
-this will also set up automatic updates. any files you manually alter will stop auto-updating.
 
-updates run automatically on startup via git pull, you can update manually by going into the SDG-OS directory and running `git pull`
-
-to turn updates off, run the following command:
-
-`echo "off" > ~/.coinfig/SDGupdate.state`
+you can update by running `git pull` followed by the update script, do note that updating will remove any customizations you've made to your configs, you can update individual components, and reference the git diffs on github to see what was changed to merge those changes into your own config. 
 
 ## manual install
 
@@ -50,32 +45,40 @@ copy the files to your .config folder if you want to modify them yourself
 
 `cp -r sdgos ~/.config`
 
-or use stow to symlink them if you want automatic updates
+`cp -r ghostty ~/.config`
 
-`cd SDG-OS`
+`cp -r DankMaterialShell ~/.config`
 
-`stow .`
 
-or manually symlink them
-
-`sudo ln -sf /home/$(whoami)/SDG-OS/mango /home/$(whoami)/.config`
-
-`sudo ln -sf /home/$(whoami)/SDG-OS/sdgos /home/$(whoami)/.config`
-
-then make the scripts in the sdgos folder executable:
+make the scripts in the sdgos folder executable:
 
 `sudo chmod -R a+x ~/.config/sdgos`
 
-lastly, pick whether you want to use automatic updates or not (only relevant if you used stow or symlinks)
+copy over the zsh config:
 
-`echo "on" > ~/.config/SDGupdate.state`
+`cp /home/$(Whoami)/.config/sdgos/zshrc /home/$(whoami)/.zshrc`
 
-use "on" for automatic updates on boot or "off" to not have automatic updates
+`cp /home/$(Whoami)/.config/sdgos/p10k.zsh /home/$(whoami)/.p10k.zsh`
+
+create and set your project directory:
+
+`mkdir -p ~/<My_Project_Directory>`
+
+`echo "<My_Project_Directory>" > ~/.config/projectdir.state`
+
+
+example with a subdirectory:
+
+`mkdir -p ~/Documents/Projects`
+
+`echo "Documents/Projects" > ~/.config/projectdir.state`
+
+
+the install script normally also asks you if you want to install unipkg or my dotfile sync script. you can install those manually from their github pages.
 
 
 
-manual updates can be done by CDing into the SDG-OS directory and running `git pull`
-
+## post-install
 
 you may need to tweak around with some stuff to get application auto-theming to work, reference the DMS docs:
 https://danklinux.com/docs/dankmaterialshell/application-themes
@@ -92,43 +95,74 @@ for keybinds, press super+k. these are automatically updated from your binds.con
 
 # needed software:
 
-(aur)mangowm-git
-ghostty
-firefox
-dms-shell
-nautilus
-brightnessctl
-pipewire-pulse
-pipewire
-(aur)dsearch-bin
-matugen
-adw-gtk-theme
-wl-copy
-hyprshot
-grim
-satty
-fzf
-micro
-stow
-zoxide
-zsh
-zsh-theme-powerlevel10k
-eza
-kanshi
+- (aur)mangowm-git
+- (aur)dsearch-bin
+- ghostty 
+- shelly 
+- firefox 
+- dms-shell 
+- yay git 
+- nautilus 
+- zsh-history-substring-search 
+- zsh-syntax-highlighting 
+- zsh-autosuggestions 
+- zsh-doc 
+- stow 
+- brightnessctl 
+- pipewire-pulse 
+- pipewire 
+- matugen 
+- adw-gtk-theme 
+- wl-copy 
+- hyprshot 
+- grim 
+- satty 
+- code-oss 
+- zoxide 
+- zsh 
+- zsh-theme-powerlevel10k 
+- eza 
+- kanshi 
+- ttf-nerd-fonts-symbols-common 
+- ttf-nerd-fonts-symbols-mono 
+- ttf-nerd-fonts-symbols 
+- ttf-cascadia-code-nerd 
+- ttf-cascadia-mono-nerd 
+- ttf-terminus-nerd 
+- ttf-firacode-nerd 
+- ttf-ubuntu-nerd
+
 
 
 # installation of that software:
 
-`sudo pacman -Syu ghostty firefox dms-shell yay git nautilus brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty stow zoxide zsh zsh-theme-powerlevel10k eza kanshi`
+`sudo pacman -Syu ghostty shelly firefox dms-shell yay git nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd`
 
 `yay -S mangowm-git dsearch-bin`
 
+the install script also takes care of this.
 
 # mango-config editor script
 
 you can open the mango config editor with super+m, this opens a terminal in which you can select a config file and see the contents of that config file. 
 
 this script has a variable for the editor, it uses micro by default, but you can change the line "app=micro" to any editor you'd like.
+
+# mango-config viewer script
+
+you can open this with super+alt+m, you can select a mango config file just like with the editor, but instead of opening in a text editor, this will open the config in an interactive viewer that will show you the details of the selected config line, pressing alt+b will open the documentation for it in a new tab in your open firefox window
+
+# documentation quicklinks
+
+pressing super+shift+m opens a terminal with quick links to various pieces of documentation and a couple of built-in searchable reference lists. 
+
+reference lists included:
+Dank Material Shell - full IPC usage (commands)
+MangoWM - Config File options
+MangoWM - dispatchers (for keybinds and mango IPC)
+MangoWM - IPC commands
+
+this also contains all the mangoWM documentation sites, useful dankmaterial shell documentation pages, ghostty docs and the cachyOS + arch wiki's. 
 
 
 # ghostty config
@@ -153,7 +187,7 @@ lastly, zsh also has some suffix aliasses, which allow you to open specific file
 
 SDG-OS comes with installer TUIs for both pacman and the AUR
 
-these can be spawned with super+y for pacman or super+shift+y for AUR
+keybinds for these are disabled by default in favour of Satty and unipkg, but can be enabled in the mango binds config by uncommenting the lines.
 
 alternatively, you can open them in the terminal using `pacgui` and `aurgui`
 
@@ -196,15 +230,6 @@ just message me on discord lmao.
 
 
 
-# Updates:
-
-19-05-2026 - updated ghostty config to use alt+arrows instead of ctrl+arrows for panes, added super+alt+numbers to toggle workspaces for multi-workspace view
-
-18-05-2026 - added tips, better ghostty and zsh configuration and a project manager TUI to open your github repo's in VSCode. 
-
-17-05-2026 - added auto-updater as well as install script.
-
-17-05-2026 - added screenshot capability through scripts, first run modal (opens settings and keybinds popup on first boot) and added a somewhat-simple mango config editor script.
 
 
 
