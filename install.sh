@@ -44,7 +44,7 @@ if [[ ! $REPLY =~ ^[Nn]$ ]]; then
     mkdir -p ~/.local/share/dotfile-git-sync
     cp ~/projects/dotfile-git-sync/dotfile-git-sync ~/.local/share/dotfile-git-sync
     sudo ln -sf /home/$(whoami)/.local/share/dotfile-git-sync/dotfile-git-sync /usr/bin
-    chmod a+x ~/.local/share/dotfiles-git-sync/dotfile-git-sync
+    chmod a+x ~/.local/share/dotfile-git-sync/dotfile-git-sync
 
 else
     echo "optional scripts skipped, you can always install them manually later."

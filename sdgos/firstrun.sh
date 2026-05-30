@@ -1,6 +1,8 @@
 #!/bin/bash
 
 if [ ! -f ~/.config/firstrun.state ]; then
+
+    sleep 10
     dms ipc call wallpaper set ~/.config/sdgos/wallpaper.png
     dms ipc call settings set showWorkspaceIndex true
     dms ipc call settings set dwlShowAllTags true
@@ -18,6 +20,8 @@ if [ ! -f ~/.config/firstrun.state ]; then
     dms ipc call settings set currentThemeCategory dynamic
     dms ipc call settings set runUserMatugenTemplates true
     dms ipc call settings set matugenScheme scheme-tonal-spot
+    dms ipc call settings set currentThemeName dynamic
+    dms ipc call settings set currentThemeCategory dynamic
     
     dms ipc call settings open
     dms ipc call keybinds openWithPath mangowc ~/.config/mango/binds.conf
