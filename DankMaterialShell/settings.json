@@ -11,7 +11,7 @@
       }
     }
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-fidelity",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -207,7 +207,7 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "auto",
-  "iconTheme": "Sweet-Blue-Filled",
+  "iconTheme": "candy-icons",
   "cursorSettings": {
     "theme": "System Default",
     "size": 18,
@@ -560,7 +560,7 @@
     {
       "id": "bar1780100331895",
       "name": "Bar 2",
-      "enabled": false,
+      "enabled": true,
       "position": 1,
       "screenPreferences": [
         "all"
@@ -648,7 +648,7 @@
       "autoHideDelay": 250,
       "showOnWindowsOpen": false,
       "openOnOverview": false,
-      "visible": true,
+      "visible": false,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
       "maximizeDetection": true,
@@ -663,13 +663,29 @@
     {
       "id": "bar1780101070580",
       "name": "Bar 3",
-      "enabled": false,
+      "enabled": true,
       "position": 0,
       "screenPreferences": [
         "all"
       ],
       "showOnLastDisplay": false,
       "leftWidgets": [
+        {
+          "id": "controlCenterButton",
+          "enabled": true,
+          "showNetworkIcon": false,
+          "showBluetoothIcon": false,
+          "showAudioIcon": false,
+          "showAudioPercent": false,
+          "showVpnIcon": false,
+          "showBrightnessIcon": false,
+          "showBrightnessPercent": false,
+          "showMicIcon": false,
+          "showMicPercent": false,
+          "showBatteryIcon": false,
+          "showPrinterIcon": false,
+          "showScreenSharingIcon": false
+        },
         {
           "id": "workspaceSwitcher",
           "enabled": true
@@ -770,7 +786,7 @@
       "autoHideDelay": 250,
       "showOnWindowsOpen": false,
       "openOnOverview": false,
-      "visible": true,
+      "visible": false,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
       "maximizeDetection": true,
@@ -785,7 +801,7 @@
     {
       "id": "bar1780101400641",
       "name": "Bar 4",
-      "enabled": false,
+      "enabled": true,
       "position": 2,
       "screenPreferences": [
         "all"
@@ -867,7 +883,7 @@
       "autoHideDelay": 2000,
       "showOnWindowsOpen": false,
       "openOnOverview": false,
-      "visible": true,
+      "visible": false,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
       "maximizeDetection": true,

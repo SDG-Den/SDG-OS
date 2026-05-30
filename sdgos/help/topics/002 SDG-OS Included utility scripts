@@ -48,12 +48,12 @@ you can also get a tip by running `tipme` in the terminal or by pressing *super+
 #tuis/aur-install.sh#
 provides a graphical interface for browsing the AUR, including multi-select functionality and a details pane
 
-you can launch this script with the terminal alias `aurgui` or the bind *super+shift+Y*
+you can launch this script with the terminal alias `aurgui`
 
 #tuis/pkg-install.sh#
 provides a graphical interface for browsing the pacman repository, including multi-select functionality and a details pane
 
-you can launch this script with the terminal alias `pacgui` or the bind *super+Y*
+you can launch this script with the terminal alias `pacgui`
 
 #tuis/documentation.sh#
 provides quick access to various pieces of documentation, including various interactive reference lists. 
@@ -63,7 +63,7 @@ you can launch this script with the terminal alias `documentation` or the bind *
 #tuis/layout-switch.sh#
 allows you to switch through layouts using a selectable menu, pulls layouts from layouts.list, so new layouts can be added easily. 
 
-you can launch this script with the bind *super+W*
+you can launch this script with the bind *super+shift+W*
 
 #tuis/project-select.sh#
 shows a list of git repositories within your projects directory (default ~/projects) with their top level list of files + readme.
@@ -75,3 +75,45 @@ you can launch this script with the alias `git-projects` or the bind *super+shif
 gives you a browsable TUI for all configuration files in ~/.config/mango, with a preview, selecting an entry opens it in micro. 
 
 you can launch this script with the alias `mangoconf` or the bind *super+M*
+
+#config-overview/menu.sh#
+gives a browsable TUI that allows you to see details for each line in your mango config.
+
+binds to *super+alt+m*
+
+#wallpapers/setwallpapergroup.sh#
+
+can either be called with the name of one of the folders in wallpapers, or without anything.
+
+if called with the name of a folder, sets the wallpapers to that folder.
+
+if called without, presents a menu to select a folder.
+
+bound by default to *super+w*, cycling wallpapers manually can be done with alt+W and shift+alt+w for forwards and backwards.
+
+#tuis/bar-presets.sh#
+
+presents a FZF menu that allows you to toggle the pre-configured bars and dock, as well as select from various combination presets.
+
+this menu can be spawned with *super+shift+d*
+
+
+#optional: unipkg# 
+
+unipkg does not exist in the ~/.config/sdgos directory, but is installed to your system.
+
+you can open the unipkg TUI using `unipkg launch-tui`, launch an interactive help TUI for it with `unipkg help-tui` or use `unipkg help` to find out more.
+
+
+#optional: dotfile-git-sync
+
+this is also added as a command to your system, and can be run from the terminal as follows:
+
+`dotfile-git-sync ~/path/to/your/github/repository`
+
+this will open a menu showing you the files in your ~/.config directory, allowing you to multi-select with tab.
+
+the script will move all selected folders from .config to your github repository, then symlink them back using stow (also including any folders in the github repository that were already imported), then *sync* your repository to github.
+
+it's recommended to put your git repository for your dotfiles inside your projects folder so you can easily access it with project-select (*super+shift+tab* or alias `git-projects`)
+

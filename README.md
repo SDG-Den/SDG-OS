@@ -117,11 +117,11 @@ for keybinds, press super+k. these are automatically updated from your binds.con
 - pipewire 
 - matugen 
 - adw-gtk-theme 
-- wl-copy 
+- wl-clipboard 
 - hyprshot 
 - grim 
 - satty 
-- code-oss 
+- code 
 - zoxide 
 - zsh 
 - zsh-theme-powerlevel10k 
@@ -140,7 +140,7 @@ for keybinds, press super+k. these are automatically updated from your binds.con
 
 # installation of that software:
 
-`sudo pacman -Syu ghostty shelly firefox dms-shell yay git nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd`
+`sudo pacman -Syu ghostty shelly firefox dms-shell yay git wl-clipboard nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd`
 
 `yay -S mangowm-git dsearch-bin`
 
@@ -218,6 +218,20 @@ to change your projects dir, you can do the following:
 this will set your projects dir to /home/YourUserName/MyProjects/Subdir
 
 you cannot set the projects dir outside of your home folder, it is also not advised to set it directly to your home folder as including .local will cause it to include all your AUR packages.
+
+
+# wallpapers
+
+SDG-OS comes with a wallpaper group switcher, you can press super+w to open the wallpaper group switcher, alt+w to go to the next wallpaper and alt+shift+w to go to the previous.
+
+you can also quickly call a specific group by calling the script with a group:
+`~/.config/sdgos/wallpapers/setwallpapergroup.sh default` 
+
+you can add groups simply by adding folders to ~/.config/sdgos/wallpapers, a folder is a group, all the images inside will be cycled through. 
+
+the images will always be cycled through in alphabetical order (the same way ls -l sorts the directory)
+
+if you make a group with a single wallpaper, it will not cycle. 
 
 
 
