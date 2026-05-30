@@ -175,7 +175,7 @@
   "runningAppsGroupByApp": false,
   "runningAppsCurrentMonitor": false,
   "appIdSubstitutions": [],
-  "centeringMode": "geometric",
+  "centeringMode": "index",
   "clockDateFormat": "",
   "lockDateFormat": "",
   "greeterRememberLastSession": true,
@@ -428,34 +428,22 @@
           "enabled": true
         },
         {
-          "id": "focusedWindow",
+          "id": "weather",
           "enabled": true
         }
       ],
       "centerWidgets": [
         {
+          "id": "focusedWindow",
+          "enabled": true
+        },
+        {
           "id": "clock",
           "enabled": true
         },
         {
-          "id": "weather",
-          "enabled": true
-        },
-        {
-          "id": "cpuTemp",
-          "enabled": true,
-          "minimumWidth": true
-        },
-        {
-          "id": "gpuTemp",
-          "enabled": true,
-          "selectedGpuIndex": 0,
-          "pciId": "10de:2544"
-        },
-        {
           "id": "music",
-          "enabled": true,
-          "mediaSize": 1
+          "enabled": true
         }
       ],
       "rightWidgets": [
@@ -464,32 +452,24 @@
           "enabled": true
         },
         {
-          "id": "clipboard",
-          "enabled": true
-        },
-        {
-          "id": "colorPicker",
-          "enabled": true
-        },
-        {
-          "id": "vpn",
-          "enabled": true
-        },
-        {
           "id": "cpuUsage",
           "enabled": true,
           "minimumWidth": true
         },
         {
-          "id": "gpuTemp",
+          "id": "memUsage",
           "enabled": true,
-          "selectedGpuIndex": 0,
-          "pciId": "10de:2544"
+          "minimumWidth": true
         },
         {
           "id": "diskUsage",
           "enabled": true,
           "mountPath": "/"
+        },
+        {
+          "id": "cpuTemp",
+          "enabled": true,
+          "minimumWidth": true
         },
         {
           "id": "notificationButton",

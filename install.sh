@@ -8,7 +8,7 @@ yay -S mangowm-git dsearch-bin
 
 WORKINGDIR=$(pwd)
 
-if [ $WORKINGDIR != "/home/$(whoami)/SDG-OS"]; then
+if [ $WORKINGDIR != "/home/$(whoami)/SDG-OS" ]; then
     ln -sf $WORKINGDIR /home/$(whoami)
 fi
 
