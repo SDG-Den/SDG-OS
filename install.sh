@@ -52,7 +52,19 @@ else
     echo "optional scripts skipped, you can always install them manually later."
 fi
 
+echo "SDG-OS can optionally download Distro Wallpapers for you"
+echo "this is done from the following github: https://github.com/LinuxKits/Distro-wallpapers"
+echo "the repository will be cloned into ~/projects/Distro-wallpapers"
+echo ""
+read -p "Do you want to add Distro Wallpapers? [Y/n] " -n 1 -r
+echo  # Move to a new line
+if [[ ! $REPLY =~ ^[Nn]$ ]]; then
+    git clone https://github.com/LinuxKits/Distro-wallpapers ~/projects/Distro-wallpapers
 
 
+else
+    echo "optional scripts skipped, you can always install them manually later."
+fi
 
-echo "installation complete! you should now be able to log out and switch to \"mango\""
+
+echo "installation complete! you should now be able to reboot and switch to \"mango\" in your log-in manager"

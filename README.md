@@ -76,6 +76,10 @@ example with a subdirectory:
 
 the install script normally also asks you if you want to install unipkg or my dotfile sync script. you can install those manually from their github pages.
 
+lastly, the install script asks if you want to pull Distro Wallpapers from the following repository: https://github.com/LinuxKits/Distro-wallpapers
+
+again, you can manually pull these.
+
 
 
 ## post-install

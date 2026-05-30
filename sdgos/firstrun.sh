@@ -2,7 +2,7 @@
 
 if [ ! -f ~/.config/firstrun.state ]; then
 
-    sleep 10
+    sleep 5
     dms ipc call wallpaper set ~/.config/sdgos/wallpaper.png
     dms ipc call settings set showWorkspaceIndex true
     dms ipc call settings set dwlShowAllTags true
