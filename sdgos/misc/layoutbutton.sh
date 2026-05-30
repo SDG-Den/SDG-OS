@@ -1,69 +1,69 @@
 #!/bin/bash
 
 
-ACTIVEMON=$(mmsg -g -o | grep -e "selmon 1" | awk '{print $1}')
+ACTIVEMON=$(mmsg get all-monitors | jq '.monitors[] | select(.active == true) | .name' -r)
 
 echo $ACTIVEMON
 
-LAYOUT=$(mmsg -g -l | grep -e "$ACTIVEMON" | awk '{print $3}')
+LAYOUT=$(mmsg get monitor $ACTIVEMON | jq '.tags[] | select(.is_active == true) | .layout' -r)
 
 echo "$LAYOUT"
 
 case $LAYOUT in
     T)
         echo "Left Master"
-        mmsg -d zoom
+        mmsg dispatch zoom
         ;;
     S)
         echo "Horizontal Scroller"
-        mmsg -d switch_proportion_preset
+        mmsg dispatch switch_proportion_preset
         ;;
     G)
         echo "Horizontal Grid"
-        mmsg -d togglegaps
+        mmsg dispatch togglegaps
         ;;
     M)
         echo "Monocle"
         ;;
     K)
         echo "Horizontal Deck"
-        mmsg -d zoom
+        mmsg dispatch zoom
         ;;
     CT)
         echo "Center Master"
-        mmsg -d zoom
+        mmsg dispatch zoom
         ;;
     RT)
         echo "Right Master"
-        mmsg -d zoom
+        mmsg dispatch zoom
         ;;
     VS)
         echo "Vertical Scroller"
-        mmsg -d switch_proportion_preset
+        mmsg dispatch switch_proportion_preset
         ;;
     VT)
         echo "Top Master"
-        mmsg -d zoom
+        mmsg dispatch zoom
         ;;
     VG)
         echo "Vertical Grid"
-        mmsg -d togglegaps
+        mmsg dispatch togglegaps
         ;;
     VK)
         echo "Vertical Deck"
-        mmsg -d zoom
+        mmsg dispatch zoom
         ;;
     DW)
         echo "Dwindle"
-        mmsg -d togglemaximizescreen
+        mmsg dispatch togglemaximizescreen
         ;;
     F)
         echo "Fair"
-        mmsg -d togglegaps
+        mmsg dispatch togglegaps
         ;;
     VF)
         echo "Vertical Fair"
-        mmsg -d togglegaps
+        mmsg dispatch togglegaps
         ;;
     *)
         notify-send "Unhandled Layout Detected"

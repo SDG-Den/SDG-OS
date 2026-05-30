@@ -31,7 +31,7 @@ command                                     |                   | mango -c ~/.co
 ### other monitor things
 ~/.config/mango/monitors.conf               | allow_tearing     | allow_tearing=1                                   | allows programs to bypass mangoWM vsync                 | Mango Monitor Rules
 ~/.config/mango/windowrules.conf            | force_tearing:1   | windowrule=force_tearing:1,title:myapptitle       | turns off compositor VSYNC for matching programs        | Mango Monitor Rules
-command                                     | toggle monitors   | mmsg -d toggle_monitor,eDP-1                      | toggles output to the provided monitor                  | Mango Monitor Rules
+command                                     | toggle monitors   | mmsg dispatch toggle_monitor,eDP-1                      | toggles output to the provided monitor                  | Mango Monitor Rules
 
 ## Mango Keyboard settings
 ~/.config/mango/input.conf                  | repeat_rate       | repeat_rate=25                                    | how many keystrokes per second a held key does          | Mango Keyboard Settings

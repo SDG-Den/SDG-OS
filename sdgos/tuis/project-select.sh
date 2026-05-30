@@ -13,4 +13,4 @@ echo $SELECTED
 
 CMD="code-oss -n $SELECTED"
 
-mmsg -d spawn_shell,"$CMD"
+mmsg dispatch spawn_shell,"$CMD"
