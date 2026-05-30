@@ -18,6 +18,8 @@ mv /home/$(whoami)/.config/sdgos /home/$(whoami)/.config/sdgos-old-$RANDOM
 cp -r /home/$(whoami)/SDG-OS/sdgos /home/$(whoami)/.config
 mv /home/$(whoami)/.config/ghostty /home/$(whoami)/.config/ghostty-old-$RANDOM
 cp -r /home/$(whoami)/SDG-OS/ghostty /home/$(whoami)/.config
+mv /home/$(whoami)/.config/DankMaterialShell /home/$(whoami)/.config/DankMaterialShell-old-$RANDOM
+cp -r /home/$(whoami)/SDG-OS/DankMaterialShell /home/$(whoami)/.config
 
 
 echo "projects" > ~/.config/projectdir.state
