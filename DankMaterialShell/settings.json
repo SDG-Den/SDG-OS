@@ -207,7 +207,7 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "auto",
-  "iconTheme": "candy-icons",
+  "iconTheme": "Tela-circle-black-light",
   "cursorSettings": {
     "theme": "System Default",
     "size": 18,
@@ -782,7 +782,7 @@
       "id": "bar1780101400641",
       "name": "Bar 4",
       "enabled": true,
-      "position": 2,
+      "position": 3,
       "screenPreferences": [
         "all"
       ],

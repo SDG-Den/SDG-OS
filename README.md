@@ -101,6 +101,7 @@ for keybinds, press super+k. these are automatically updated from your binds.con
 
 - (aur)mangowm-git
 - (aur)dsearch-bin
+- (aur)qt6ct-kde
 - ghostty 
 - shelly 
 - firefox 
@@ -123,10 +124,10 @@ for keybinds, press super+k. these are automatically updated from your binds.con
 - satty 
 - code 
 - zoxide 
+- tela-circle-icon-theme-black 
 - zsh 
 - zsh-theme-powerlevel10k 
 - eza 
-- kanshi 
 - ttf-nerd-fonts-symbols-common 
 - ttf-nerd-fonts-symbols-mono 
 - ttf-nerd-fonts-symbols 
@@ -140,9 +141,43 @@ for keybinds, press super+k. these are automatically updated from your binds.con
 
 # installation of that software:
 
-`sudo pacman -Syu ghostty shelly firefox dms-shell yay git wl-clipboard nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme wl-copy hyprshot grim satty code-oss zoxide zsh zsh-theme-powerlevel10k eza kanshi ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd`
+```sudo pacman -Syu ghostty \
+shelly \
+firefox \
+dms-shell \
+tela-circle-icon-theme-black \
+yay \
+git \
+wl-clipboard \
+nautilus \
+zsh-history-substring-search \
+zsh-syntax-highlighting \
+zsh-autosuggestions \
+zsh-doc \
+stow \
+brightnessctl \
+pipewire-pulse \
+pipewire matugen \
+adw-gtk-theme \
+hyprshot \
+grim \
+satty \
+code \
+zoxide \
+zsh \
+zsh-theme-powerlevel10k \
+eza \
+ttf-nerd-fonts-symbols-common \
+ttf-nerd-fonts-symbols-mono \
+ttf-nerd-fonts-symbols \
+ttf-cascadia-code-nerd \
+ttf-cascadia-mono-nerd \
+ttf-terminus-nerd \
+ttf-firacode-nerd \
+ttf-ubuntu-nerd```
 
-`yay -S mangowm-git dsearch-bin`
+
+`yay -S mangowm-git dsearch-bin qt6ct-kde`
 
 the install script also takes care of this.
 
