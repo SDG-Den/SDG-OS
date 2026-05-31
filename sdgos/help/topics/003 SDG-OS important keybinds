@@ -14,9 +14,14 @@ However, you don't want to be referencing this menu all the time, so here's the 
 this opens your app runner, it's also set up to find files within your home directory automatically and can find settings for you.
 
 [^SUPER+Y]:
-this opens an installer for software. doing this while holding shift allows you to instead install packages from the Arch User Repository.
+this opens shelly, your package installer. the first time you can pick which repositories to set it up for, pacman + AUR is recommended, flatpak is optional.
 
-it is recommended to use the normal package installer unless the package is either not available or broken, in which case, use the AUR. 
+*super+shift+Y* will instead open the unipkg TUI (if installed), which will work on non-arch distro's.
+
+in the config, you can tweak these to use omarchy's pacman/AUR TUIs instead, which are simpler. 
+
+[^SUPER+R]:
+this reloads mango, important when you change the config.
 
 [^SUPER+1-9]:
 using SUPER + the number keys allows you to switch between workspaces. holding shift while doing this allows you to take your active window with you.
@@ -45,6 +50,9 @@ this opens your terminal
 [^SUPER+H]:
 this opens a menu that gives you short info on common commands, pressing enter or double-clicking a command will open the manual page for that command.
 holding shift will instead open this menu! 
+
+[^SUPER+X]:
+this opens a process manager/performance monitor. you can use this to see what's using your CPU/RAM or to kill frozen programs. you can also copy the command used to start something from here.
 
 [^SUPER+K]:
 as mentioned before, this will give you a full overview of all keys.

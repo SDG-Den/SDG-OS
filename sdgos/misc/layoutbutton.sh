@@ -20,6 +20,7 @@ case $LAYOUT in
         ;;
     G)
         echo "Horizontal Grid"
+        mmsg dispatch toggle_render_border
         mmsg dispatch togglegaps
         ;;
     M)
@@ -47,7 +48,9 @@ case $LAYOUT in
         ;;
     VG)
         echo "Vertical Grid"
+        mmsg dispatch toggle_render_border
         mmsg dispatch togglegaps
+        
         ;;
     VK)
         echo "Vertical Deck"
@@ -59,10 +62,12 @@ case $LAYOUT in
         ;;
     F)
         echo "Fair"
+        mmsg dispatch toggle_render_border
         mmsg dispatch togglegaps
         ;;
     VF)
         echo "Vertical Fair"
+        mmsg dispatch toggle_render_border
         mmsg dispatch togglegaps
         ;;
     *)

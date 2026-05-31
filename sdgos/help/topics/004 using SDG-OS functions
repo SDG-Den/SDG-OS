@@ -2,21 +2,6 @@
 
 
 
-## Install TUIs
-
-the process is the same for using Pacman repositories or using the AUR.
-
-Please always prefer using the pacman repositories if possible, only use the AUR if needed.
-
-step 1: either open a terminal and type the alias `pacgui` or `aurgui`, or use the keybind *SUPER+Y* for pacman or *SUPER+SHIFT+Y* for the AUR
-
-step 2: search for your package
-
-step 3: if you wish to install multiple packages, press tab after highlighting each package
-
-step 4: press enter and provide your password
-
-your software will now be installed alongside all of its dependencies
 
 
 
@@ -95,7 +80,7 @@ this also allows you to then use the code-OSS GUI to do git pull, push and sync.
 
 ## layout switcher
 
-you can open the layout switcher with the bind *SUPER+W*
+you can open the layout switcher with the bind *SUPER+SHIFT+W*
 
 you can then tab through the layouts using the arrow keys and press enter on your desired one.
 
@@ -112,9 +97,42 @@ you can open this menu using the alias `documentation` in the terminal or the bi
 this menu will allow you to quickly open both various documentation sites in firefox as well as custom-built searchable quick reference menu's 
 
 
+## wallpaper switcher
+
+you can open this with *SUPER+W*, it'll show you the directories in ~/.config/sdgos/wallpapers
+
+each directory can contain any number of images, which will be cycled through. if you do not want cycling, just put one wallpaper in a folder.
+
+you can also cycle with alt+w and shift+alt+w to go forwards and back. 
+
+
+## bar presets
+
+you can open this with *SUPER+SHIFT+D*, this allows you to toggle the various pre-included bars, as well as dock, including some presets.
+
+
 
 ## tips
 
 tips are shown automatically when you start your first terminal session, they are also shown when you run the command `tipme`
 
 you can also get a tip in your notifications by pressing the bind *SUPER+0*
+
+
+## alternative Install TUIs
+
+you need to enable these in your binds.conf file by uncommenting the TUIs and commenting out the default installers (shelly+unipkg)
+
+the process is the same for using Pacman repositories or using the AUR.
+
+Please always prefer using the pacman repositories if possible, only use the AUR if needed.
+
+step 1: either open a terminal and type the alias `pacgui` or `aurgui`, or use the keybind *SUPER+Y* for pacman or *SUPER+SHIFT+Y* for the AUR
+
+step 2: search for your package
+
+step 3: if you wish to install multiple packages, press tab after highlighting each package
+
+step 4: press enter and provide your password
+
+your software will now be installed alongside all of its dependencies

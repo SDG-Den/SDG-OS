@@ -76,22 +76,34 @@ this menu! spawned with *SUPER+SHIFT+H*
 
 ## package installer
 
-spawned with *SUPER+Y*, this menu allows you to search the pacman repository, read details and install packages.
+spawned with *SUPER+Y*, this menu allows you to search the pacman, aur and optionally flatpak repositories.
 
 
-## AUR installer
+## unipkg installer
 
-spawned with *SUPER+SHIFT+Y*, this menu allows you to search the Arch User Repository, read details and install packages.
+spawned with *SUPER+SHIFT+Y*, this menu uses a package manager agnostic wrapper to present a TUI allowing you to use any of your package managers.
 
 
-## Mango Config TUI
+## Mango Config editor TUI
 
 spawned with *SUPER+M*, this menu gives you a list of your mango configuration files with a preview, selecting an item will open it in the micro text editor. 
+
+## Mango Config explainer TUI
+
+spawned with *SUPER+ALT+M*, this menu allows you to open any of your mango config files and browse through them line-by-line, showing details on what that line does and how to configure it.
 
 
 ## layout switcher
 
-spawned with *SUPER+W*, this menu allows you to switch between mangoWM layouts
+spawned with *SUPER+SHIFT+W*, this menu allows you to switch between mangoWM layouts
+
+## wallpaper switcher 
+
+spawned with *SUPER+W*, this allows you to select different wallpaper options.
+
+## bar switcher
+
+spawned with *SUPER+SHIFT+D*, this allows you to switch between different bar layouts as well as toggle individual components.
 
 
 ## documentation

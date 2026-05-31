@@ -5,7 +5,7 @@ alias microfind='micro $(pwd)/$(fzf --layout=reverse --preview="bat {}")'
 alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
 alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='eza -l --color=always --group-directories-first --icons'  # long format
-alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
+alias lt='eza -aT --level=4 --color=always --group-directories-first --icons' # tree listing
 alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -22,9 +22,10 @@ alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'
 alias apt='man pacman'
 alias apt-get='man pacman'
 alias jctl="journalctl -p 3 -xb"
-alias cmdhist='CMD=$(history -i | fzf | sed "s/.*:..//"); sleep 0.1 && wtype $CMD'
+alias cmdhist='CMD=$(history -i | tac | fzf | sed "s/.*:..  //"); sleep 0.1 && wtype $CMD'
 alias tipme='shuf -n 1 ~/.config/sdgos/tips/tips.list'
 alias alltips='cat ~/.config/sdgos/tips/tips.list | fzf'
+alias cowtip='cowsay -r $(shuf -n 1 ~/.config/sdgos/tips/tips.list) | lolcat'
 
 ## tools
 alias pacgui=~/.config/sdgos/tuis/pkg-install.sh
@@ -37,7 +38,6 @@ alias helptui=~/.config/sdgos/help/help.sh
 
 export EDITOR=micro
 export IMAGEPROGRAM='satty --filename'
-export TIPS=$(cat ~/.config/sdgos/tips/tips.list)
 export SHELL=/bin/zsh
 
 function plz() {
