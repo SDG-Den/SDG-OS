@@ -35,7 +35,7 @@ you can update by running `git pull` followed by the update script, do note that
 
 clone the repo.
 
-`git clone https://git.sdgcloud.nl/SDGDen/SDG-OS.git`
+`git clone https://github.com/SDG-Den/SDG-OS.git`
 
 copy the files to your .config folder if you want to modify them yourself
 
