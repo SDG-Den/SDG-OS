@@ -16,7 +16,7 @@ clone the repository into your home (~) directory:
 
 `cd ~`
 
-`git clone https://git.sdgcloud.nl/SDGDen/SDG-OS.git`
+`git clone https://github.com/SDG-Den/SDG-OS.git`
 
 make the install script executable
 
