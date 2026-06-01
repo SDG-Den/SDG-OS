@@ -1,20 +1,20 @@
 {
   "currentThemeName": "custom",
   "currentThemeCategory": "registry",
-  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/nord/theme.json",
+  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/catppuccin/theme.json",
   "registryThemeVariants": {
     "rosePine": "rosePine",
     "catppuccin": {
       "dark": {
         "flavor": "mocha",
-        "accent": "pink"
+        "accent": "yellow"
       }
     },
-    "everforest": "medium",
+    "everforest": "hard",
     "flexoki": "orange",
-    "gruvboxMaterial": "hard"
+    "gruvboxMaterial": "soft"
   },
-  "matugenScheme": "scheme-vibrant",
+  "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
