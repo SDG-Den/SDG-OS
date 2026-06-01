@@ -149,6 +149,10 @@ tela-circle-icon-theme-black \
 yay \
 git \
 wl-clipboard \
+adwsteamgtk \
+yazi \
+cava \
+btop \
 nautilus \
 zsh-history-substring-search \
 zsh-syntax-highlighting \

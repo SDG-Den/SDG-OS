@@ -1,0 +1,75 @@
+[config]
+version_check = false
+
+[templates.m3colors]
+input_path = '~/.config/matugen/templates/colors.json'
+output_path = '~/.local/state/quickshell/user/generated/colors.json'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland/colors.conf'
+output_path = '~/.config/hypr/hyprland/colors.conf'
+
+[templates.hyprlock]
+input_path = '~/.config/matugen/templates/hyprland/hyprlock-colors.conf'
+output_path = '~/.config/hypr/hyprlock/colors.conf'
+
+[templates.fuzzel]
+input_path = '~/.config/matugen/templates/fuzzel/fuzzel_theme.ini'
+output_path = '~/.config/fuzzel/fuzzel_theme.ini'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-3.0/gtk.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-4.0/gtk.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.kde_colors]
+input_path = '~/.config/matugen/templates/kde/color.txt'
+output_path = '~/.local/state/quickshell/user/generated/color.txt'
+
+[templates.wallpaper]
+input_path = '~/.config/matugen/templates/wallpaper.txt'
+output_path = '~/.local/state/quickshell/user/generated/wallpaper/path.txt'
+
+[templates.btop]
+input_path = '~/.config/matugen/templates/InioX/btop.theme'
+output_path = '~/.config/btop/themes/sdgos.theme'
+
+[templates.cava]
+input_path = '~/.config/matugen/templates/InioX/cava-colors.ini'
+output_path = '~/.config/cava/themes/sdgos'
+
+[templates.clipse]
+input_path = '~/.config/matugen/templates/InioX/clipse_theme.json'
+output_path = '~/.config/clipse/sdgos_theme.json'
+
+[templates.micro]
+input_path = '~/.config/matugen/templates/InioX/micro.micro'
+output_path = '~/.config/micro/colorschemes/sdgos.micro'
+
+[templates.prismlauncher]
+input_path = '~/.config/matugen/templates/InioX/prismlauncher.json'
+output_path = '~/.local/share/PrismLauncher/themes/sdgos/theme.json'
+
+[templates.spotify]
+input_path = '~/.config/matugen/templates/InioX/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/Sleek/color.ini'
+
+[templates.tmux]
+input_path = '~/.config/matugen/templates/InioX/tmux-colors.conf'
+output_path = '~/.config/tmux/sdgos-colors.conf'
+
+[templates.yazi]
+input_path = '~/.config/matugen/templates/InioX/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.steam]
+input_path = '~/.config/matugen/templates/InioX/steam.css'
+output_path = '~/.config/AdwSteamGtk/custom.css'
+post_hook = 'adwaita-steam-gtk -i || true'
+
+[templates.obsidian]
+input_path = '~/.config/matugen/templates/InioX/obsidian.css'
+output_path = '~/.config/matugen/templates-out/obsidian.css'

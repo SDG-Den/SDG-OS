@@ -1,7 +1,7 @@
 {
-  "currentThemeName": "custom",
-  "currentThemeCategory": "registry",
-  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/everforest/theme.json",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
+  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/-/theme.json",
   "registryThemeVariants": {
     "rosePine": "rosePine",
     "catppuccin": {

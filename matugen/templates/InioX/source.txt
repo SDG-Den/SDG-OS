@@ -1,0 +1,3 @@
+themes originally sourced from here, altered to use dank16
+
+https://github.com/InioX/matugen-themes/blob/main/templates/Matugen.colors
