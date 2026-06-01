@@ -16,7 +16,10 @@
   },
   "sshConnections": {
     "enabled": true,
-    "terminal": "ghostty"
+    "terminal": "ghostty",
+    "history": [
+      "chrome"
+    ]
   },
   "usbManager": {
     "enabled": true
