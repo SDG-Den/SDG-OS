@@ -287,3 +287,6 @@ just message me on discord lmao.
 
 
 
+
+dotfile-git-sync - pushed on ma  1 jun 2026 18:38:29 CEST, added:
+
