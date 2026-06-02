@@ -20,8 +20,6 @@ for img in "$SRC_DIR"/*.{jpg,jpeg,png,webp}; do
     out_file="$OUT_DIR/$filename_noext"
 
     # Convert image to ASCII art using jp2a
-    # Using --term-fit for optimal terminal size, --background=dark for dark terminal
-    # Adjust options as needed (e.g., --width, --height, --chars, etc.)
     jp2a --height=22 --colors --background=dark "$img" > "$out_file"
 
     # Print status

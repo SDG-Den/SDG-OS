@@ -2,6 +2,7 @@
 
 the following scripts are provided as commands, both using install-scriptsonly.sh and install.sh
 
+---
 `fetchconf` and `fetch`
 
 fetchconf is a TUI that allows you to configure fetch, which is a fastfetch wrapper. 
@@ -18,21 +19,25 @@ image and configuration are stored in ~/.config/fetch.state
 
 
 
-
+---
 `mangoconf-viewer` and `mangoconf-editor`
 
 these two will allow you to view and edit your mango config respectively. both will open on a list of your configuration files in ~/.config/mango with a preview, and on selection, editor will open that file in micro while viewer will open that file in a tui where you can go through the config line by line and see details about that setting.
 
+
+---
 `cmdhelp`
 
 this is a simple TUI interface showing you the TLDR help for various basic linux commands, pressing enter on any of the commands opens the man page for the command.
 
 
+---
 `mango-layout`
 
 this is a TUI to select the mango layout on your current focused monitor/tag.
 
 
+---
 `projects`
 
 this is a TUI that allows you to browse through the git repositories you have available in your projects directory, seeing both the list of files and readme, and select one to open it in code-oss/vscode. 
@@ -47,6 +52,7 @@ to change the project dir to ~/Documents/MyGitProjects, run `echo "Documents/MyG
 
 
 
+---
 `wallpaper-select`
 
 this is a script for DMS that allows you to select wallpapers with corresponding color settings. each group of wallpapers comes with a wallpaper.conf file with the following keys:
