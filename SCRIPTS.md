@@ -68,3 +68,5 @@ Preset:- # only relevant if picking registry or custom, custom themes would have
 ```
 
 will pick the first wallpaper in the folder to start, cycling is not affected by the script and is set through DMS. 
+
+the config above will work as long as you remove the comments, the config format does not support commenting. the above config will use matugen with the vibrant palette in dark mode, which is the baseline i use.
