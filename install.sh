@@ -2,7 +2,7 @@
 
 echo "installing pre-requisites"
 
-sudo pacman -Syu ghostty shelly firefox adw-gtk-theme adwsteamgtk yazi cava btop tela-circle-icon-theme-black dms-shell yay git wl-clipboard nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme hyprshot grim satty code shelly zoxide zsh zsh-theme-powerlevel10k eza ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd
+sudo pacman -Syu ghostty shelly firefox jp2a adw-gtk-theme adwsteamgtk yazi cava btop tela-circle-icon-theme-black dms-shell yay git wl-clipboard nautilus zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-doc stow brightnessctl pipewire-pulse pipewire matugen adw-gtk-theme hyprshot grim satty code shelly zoxide zsh zsh-theme-powerlevel10k eza ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-terminus-nerd ttf-firacode-nerd ttf-ubuntu-nerd
 
 yay -S mangowm-git dsearch-bin qt6ct-kde
 
@@ -20,6 +20,8 @@ mv /home/$(whoami)/.config/ghostty /home/$(whoami)/.config/ghostty-old-$RANDOM
 cp -r /home/$(whoami)/SDG-OS/ghostty /home/$(whoami)/.config
 mv /home/$(whoami)/.config/DankMaterialShell /home/$(whoami)/.config/DankMaterialShell-old-$RANDOM
 cp -r /home/$(whoami)/SDG-OS/DankMaterialShell /home/$(whoami)/.config
+mv /home/$(whoami)/.config/matugen /home/$(whoami)/.config/matugen-old-$RANDOM
+cp -r /home/$(whoami)/SDG-OS/matugen /home/$(whoami)/.config
 
 
 echo "projects" > ~/.config/projectdir.state
@@ -31,6 +33,8 @@ mv /home/$(whoami)/.p10k.zsh /home/$(whoami)/.p10k.zsh-old-$RANDOM
 cp /home/$(whoami)/.config/sdgos/p10k.zsh /home/$(whoami)/.p10k.zsh
 
 chmod -R a+x ~/.config/sdgos
+ln -sf /home/$(whoami)/.config/sdgos/
+
 
 echo "SDG-OS comes with the following optional extra scripts:"
 echo " - unipkg: universal package management TUI scripting"

@@ -26,6 +26,9 @@ alias cmdhist='CMD=$(history -i | tac | fzf | sed "s/.*:..  //"); sleep 0.1 && w
 alias tipme='shuf -n 1 ~/.config/sdgos/tips/tips.list'
 alias alltips='cat ~/.config/sdgos/tips/tips.list | fzf'
 alias cowtip='cowsay -r $(shuf -n 1 ~/.config/sdgos/tips/tips.list) | lolcat'
+alias fetch='~/.config/sdgos/fastfetch/fetch.sh'
+alias fetchconf='~/.config/sdgos/fastfetch/fetch-conf.sh'
+alias yurifetch='fastfetch -l ~/Documents/yuri.png'
 
 ## tools
 alias pacgui=~/.config/sdgos/tuis/pkg-install.sh

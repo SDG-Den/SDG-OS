@@ -4,7 +4,7 @@ background-opacity = 0.7
 
 command = /bin/zsh
 
-initial-command = /bin/zsh -c fastfetch && echo "" && shuf -n 1 ~/.config/sdgos/tips/tips.list && echo "[SDG-OS Tips]: use the 'tipme' command for random tips" && echo "[SDG-OS Tips]: 'alltips' to see all tips in a searchable interface" && echo "[SDG-OS Tips]: or the SUPER+0 keybind to be notified of a random tip" && zsh 
+initial-command = /bin/zsh -c ~/.config/sdgos/fastfetch/fetch.sh && echo "" && shuf -n 1 ~/.config/sdgos/tips/tips.list && echo "[SDG-OS Tips]: use the 'tipme' command for random tips" && echo "[SDG-OS Tips]: 'alltips' to see all tips in a searchable interface" && echo "[SDG-OS Tips]: or the SUPER+0 keybind to be notified of a random tip" && zsh 
 
 scrollback-limit = 999999
 

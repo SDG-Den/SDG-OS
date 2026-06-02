@@ -116,6 +116,7 @@ for keybinds, press super+k. these are automatically updated from your binds.con
 - brightnessctl 
 - pipewire-pulse 
 - pipewire 
+- jp2a
 - matugen 
 - adw-gtk-theme 
 - wl-clipboard 
