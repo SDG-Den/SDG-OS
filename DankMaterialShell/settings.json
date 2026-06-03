@@ -369,7 +369,15 @@
       "field": "appName",
       "pattern": "ownCloud",
       "matchType": "exact",
-      "action": "mute",
+      "action": "ignore",
+      "urgency": "default"
+    },
+    {
+      "enabled": true,
+      "field": "appName",
+      "pattern": "ownCloud",
+      "matchType": "exact",
+      "action": "ignore",
       "urgency": "default"
     }
   ],
