@@ -1,7 +1,7 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/arcdarkest/theme.json",
+  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/-/theme.json",
   "registryThemeVariants": {
     "rosePine": "rosePine",
     "catppuccin": {
@@ -363,7 +363,16 @@
   "notificationHistorySaveLow": true,
   "notificationHistorySaveNormal": true,
   "notificationHistorySaveCritical": true,
-  "notificationRules": [],
+  "notificationRules": [
+    {
+      "enabled": true,
+      "field": "appName",
+      "pattern": "ownCloud",
+      "matchType": "exact",
+      "action": "mute",
+      "urgency": "default"
+    }
+  ],
   "osdAlwaysShowValue": false,
   "osdPosition": 5,
   "osdVolumeEnabled": true,
