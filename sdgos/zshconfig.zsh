@@ -23,7 +23,7 @@ alias apt='man pacman'
 alias apt-get='man pacman'
 alias jctl="journalctl -p 3 -xb"
 alias cmdhist='CMD=$(history -i | tac | fzf | sed "s/.*:..  //"); sleep 0.1 && wtype $CMD'
-alias tipme='shuf -n 1 ~/.config/sdgos/tips/tips.list'
+alias tipme='~/.config/sdgos/tips/tips.sh'
 alias alltips='cat ~/.config/sdgos/tips/tips.list | fzf'
 alias cowtip='cowsay -r $(shuf -n 1 ~/.config/sdgos/tips/tips.list) | lolcat'
 alias fetch='~/.config/sdgos/fastfetch/fetch.sh'
