@@ -12,10 +12,10 @@ case $INPUT in
     "")
         case $SETTING in 
             standard)
-                shuf -n 1 ~/.config/sdgos/tips/tips.list
+                echo "$(shuf -n 1 ~/.config/sdgos/tips/tips.list)"
                 ;;
             cow)
-                cowsay -r $(shuf -n 1 ~/.config/sdgos/tips/tips.list) | lolcat
+                cowsay -r "$(shuf -n 1 ~/.config/sdgos/tips/tips.list)" | lolcat
                 ;;
         esac
         ;;

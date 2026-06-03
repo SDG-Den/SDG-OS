@@ -7,7 +7,7 @@
 [SDG-OS Tips]: Did you know? You can use SUPER+D to toggle the dock visibility
 [SDG-OS Tips]: Did you know? You can use SUPER+X to open the process list
 [SDG-OS Tips]: Did you know? You can use SUPER+N to open your notifications
-[SDG-OS Tips]: Did to know? You can use SUPER+S to toggle your settings menu
+[SDG-OS Tips]: Did you know? You can use SUPER+S to toggle your settings menu
 [SDG-OS Tips]: Did you know? You can use SUPER+M to show the mangoWM config editor
 [SDG-OS Tips]: Did you know? You can use SUPER+Y to install packages via the GUI
 [SDG-OS Tips]: Did you know? You can use SUPER+SHIFT+Y to install AUR packages
@@ -164,5 +164,5 @@
 [SDG-OS Tips]: Did you know? You can use "> file.txt" to redirect command output to a file
 [SDG-OS Tips]: Did you know? You can use ">> file.txt" to append command output to a file
 [SDG-OS Tips]: Did you know? You can use "|" to pipe the output of one command to another (e.g., `ls | grep "file"`)
-[SDG-OS Tips]: Did you know? You can open the overview by moving your mouse to the bottom left corner of the screen.
+[SDG-OS Tips]: Did you know? You can open the overview by moving your mouse to the top left corner of the screen.
 
