@@ -43,6 +43,49 @@ export EDITOR=micro
 export IMAGEPROGRAM='satty --filename'
 export SHELL=/bin/zsh
 
+
+# sets your terminal icon (leftmost section of prompt if your distro is not detected.)
+# distro options with previews (must use nerdfont in editor to preview):
+# Arch:         '\uF303'               # 
+# centos:       '\uF304'$s             # 
+# CoreOS:       '\uF305'$s             # 
+# debian:       '\uF306'               # 
+# raspbian:     '\uF315'               # 
+# elementaryOS: '\uF309'$s             # 
+# fedora:       '\uF30a'$s             # 
+# gentoo:       '\uF30d'$s             # 
+# mageia:       '\uF310'               # 
+# mint:         '\uF30e'$s             # 
+# nixos:        '\uF313'$s             # 
+# manjaro:      '\uF312'$s             # 
+# devuan:       '\uF307'$s             # 
+# alpine:       '\uF300'$s             # 
+# AOSC:         '\uF301'$s             # 
+# openSUSE      '\uF314'$s             # 
+# sabayon       '\uF317'$s             # 
+# slackware     '\uF319'$s             # 
+# void          '\UF32E'$s             # 
+# artix         '\UF31F'$s             # 
+# ubuntu        '\uF31b'$s             # 
+# kali          '\uF327'$s             # 
+# RHEL          '\UF111B'$s            # 󱄛
+# amazon        '\uF270'$s             # 
+# endeavourOS   '\UF322'$s             # 
+# rocky linux   '\UF32B'$s             # 
+# alma linux    '\UF31D'$s             # 
+# guix          '\UF325'$s             # 
+# neon          '\uF17C'               # 
+# general tux   '\uF17C'               # 
+
+## you can also use any other symbol from nerdfonts. 
+## https://www.nerdfonts.com/cheat-sheet
+## example: the xbox logo is ed3e on the site, so to get it, fill in $`\uED3E`
+
+export POWERLEVEL9K_LINUX_ICON=$'\uF303'
+
+## if your OS is detected and you want to change it, uncomment the following line and set it:
+# export POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uF303'
+
 function plz() {
     if [ -z "$1" ]; then
         sudo $(fc -ln 1 | tail -1)
