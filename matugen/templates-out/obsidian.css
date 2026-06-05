@@ -6,25 +6,25 @@
 .theme-dark, .theme-light {
 
     /* ── Material You RGB helpers ──────────────────────────── */
-    --mat-bg-rgb:             18, 18, 18;
-    --mat-surface-rgb:        18, 18, 18;
+    --mat-bg-rgb:             14, 14, 14;
+    --mat-surface-rgb:        14, 14, 14;
     --mat-on-surface-rgb:     224, 224, 224;
-    --mat-primary-rgb:        118, 186, 153;
-    --mat-on-primary-rgb:     0, 0, 0;
+    --mat-primary-rgb:        255, 0, 0;
+    --mat-on-primary-rgb:     255, 255, 255;
 
     /* ── Core Backgrounds ──────────────────────────────────── */
-    --background-primary:           #121212;
-    --background-primary-alt:       #121212;
-    --background-secondary:         #121212;
-    --background-secondary-alt:     #1e1e1e;
+    --background-primary:           #0e0e0e;
+    --background-primary-alt:       #0e0e0e;
+    --background-secondary:         #0e0e0e;
+    --background-secondary-alt:     #1c1c1c;
 
     /* ── Titlebar ──────────────────────────────────────────── */
-    --titlebar-background:          #121212;
-    --titlebar-background-focused:  #121212;
+    --titlebar-background:          #0e0e0e;
+    --titlebar-background-focused:  #0e0e0e;
     --titlebar-text-color:          #e0e0e0;
 
     /* ── Borders & Dividers ────────────────────────────────── */
-    --background-modifier-border:         #1e1e1e;
+    --background-modifier-border:         #1c1c1c;
     --background-modifier-border-focus:   #444444;
     --background-modifier-border-hover:   #444444;
 
@@ -32,15 +32,15 @@
     --text-normal:      #e0e0e0;
     --text-muted:       #bdbdbd;
     --text-faint:       #444444;
-    --text-on-accent:   #000000;
-    --text-selection:   rgba(118, 186, 153, 0.25);
+    --text-on-accent:   #ffffff;
+    --text-selection:   rgba(255, 0, 0, 0.25);
 
     /* ── Accent & Interactive ──────────────────────────────── */
-    --interactive-accent:           #76ba99;
-    --interactive-accent-hover:     #5a9a80;
-    --interactive-accent-rgb:       118, 186, 153;
-    --text-accent:                  #76ba99;
-    --text-accent-hover:            #5a9a80;
+    --interactive-accent:           #ff0000;
+    --interactive-accent-hover:     #b71c1c;
+    --interactive-accent-rgb:       255, 0, 0;
+    --text-accent:                  #ff0000;
+    --text-accent-hover:            #b71c1c;
 
     /* ── Hover & Active Modifiers ──────────────────────────── */
     --background-modifier-hover:          rgba(var(--mat-on-surface-rgb), 0.06);
@@ -50,14 +50,14 @@
     --background-modifier-error-hover:    #ff5252;
 
     /* ── Obsidian Color Scale (--color-base-XX) ────────────── */
-    --color-base-00:    #121212;
-    --color-base-05:    #121212;
-    --color-base-10:    #121212;
-    --color-base-20:    #121212;
-    --color-base-25:    #1e1e1e;
+    --color-base-00:    #0e0e0e;
+    --color-base-05:    #0e0e0e;
+    --color-base-10:    #0e0e0e;
+    --color-base-20:    #0e0e0e;
+    --color-base-25:    #1c1c1c;
     --color-base-30:    #2a2a2a;
     --color-base-35:    #2a2a2a;
-    --color-base-40:    #1e1e1e;
+    --color-base-40:    #1c1c1c;
     --color-base-50:    #444444;
     --color-base-60:    #bdbdbd;
     --color-base-70:    #e0e0e0;
@@ -65,54 +65,54 @@
 
     /* ── Semantic Colors ───────────────────────────────────── */
     --color-red:        #ff5252;
-    --color-orange:     #5c7080;
-    --color-yellow:     #5c7080;
+    --color-orange:     #00ff00;
+    --color-yellow:     #00ff00;
     --color-green:      #2a2a2a;
     --color-cyan:       #2a2a2a;
-    --color-blue:       #76ba99;
-    --color-purple:     #5c7080;
-    --color-pink:       #5c7080;
+    --color-blue:       #ff0000;
+    --color-purple:     #00ff00;
+    --color-pink:       #00ff00;
 
     /* ── Headings ──────────────────────────────────────────── */
-    --h1-color:     #76ba99;
-    --h2-color:     #76ba99;
-    --h3-color:     #5c7080;
-    --h4-color:     #5c7080;
+    --h1-color:     #ff0000;
+    --h2-color:     #ff0000;
+    --h3-color:     #00ff00;
+    --h4-color:     #00ff00;
     --h5-color:     #bdbdbd;
     --h6-color:     #444444;
 
     /* ── Links ─────────────────────────────────────────────── */
-    --link-color:           #76ba99;
+    --link-color:           #ff0000;
     --link-color-hover:     #e0e0e0;
-    --link-external-color:  #5c7080;
+    --link-external-color:  #00ff00;
     --link-unresolved-color: #444444;
 
     /* ── Tags ──────────────────────────────────────────────── */
     --tag-color:            #e0e0e0;
-    --tag-background:       #5a9a80;
-    --tag-border-color:     #76ba99;
-    --tag-color-hover:      #000000;
-    --tag-background-hover: #76ba99;
+    --tag-background:       #b71c1c;
+    --tag-border-color:     #ff0000;
+    --tag-color-hover:      #ffffff;
+    --tag-background-hover: #ff0000;
 
     /* ── Checkboxes ────────────────────────────────────────── */
-    --checkbox-color:           #76ba99;
-    --checkbox-color-hover:     #5a9a80;
+    --checkbox-color:           #ff0000;
+    --checkbox-color-hover:     #b71c1c;
     --checkbox-border-color:    #444444;
-    --checkbox-marker-color:    #000000;
+    --checkbox-marker-color:    #ffffff;
 
     /* ── Code Blocks ───────────────────────────────────────── */
-    --code-background:  #121212;
+    --code-background:  #0e0e0e;
     --code-normal:      #e0e0e0;
     --code-comment:     #444444;
-    --code-function:    #76ba99;
+    --code-function:    #ff0000;
     --code-important:   #ff5252;
-    --code-keyword:     #5c7080;
-    --code-operator:    #5c7080;
+    --code-keyword:     #00ff00;
+    --code-operator:    #00ff00;
     --code-property:    #bdbdbd;
-    --code-punctuation: #1e1e1e;
-    --code-string:      #5c7080;
+    --code-punctuation: #1c1c1c;
+    --code-string:      #00ff00;
     --code-tag:         #ff5252;
-    --code-value:       #5c7080;
+    --code-value:       #00ff00;
 
     /* ── Scrollbar ─────────────────────────────────────────── */
     --scrollbar-thumb-bg:           rgba(var(--mat-on-surface-rgb), 0.12);
@@ -124,13 +124,13 @@
     --input-shadow-hover: 0 0 0 2px #444444;
 
     /* ── Graph View ────────────────────────────────────────── */
-    --graph-node:           #76ba99;
+    --graph-node:           #ff0000;
     --graph-node-unresolved: #444444;
     --graph-node-focused:   #e0e0e0;
-    --graph-node-tag:       #5c7080;
-    --graph-node-attachment: #5c7080;
-    --graph-line:           #1e1e1e;
-    --graph-background:     #121212;
+    --graph-node-tag:       #00ff00;
+    --graph-node-attachment: #00ff00;
+    --graph-line:           #1c1c1c;
+    --graph-background:     #0e0e0e;
 
 }
 
