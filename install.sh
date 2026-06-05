@@ -26,6 +26,7 @@ cp -r /home/$(whoami)/SDG-OS/matugen /home/$(whoami)/.config
 
 echo "projects" > ~/.config/projectdir.state
 mkdir -p ~/projects
+echo "none:default.jsonc" > ~/.config/fetch.state
 
 mv /home/$(whoami)/.zshrc /home/$(whoami)/.zshrc-old-$RANDOM
 cp /home/$(whoami)/.config/sdgos/zshrc /home/$(whoami)/.zshrc

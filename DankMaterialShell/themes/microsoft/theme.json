@@ -3,7 +3,7 @@
   "name": "Microsoft Surface",
   "version": "1.0.0",
   "author": "ATLAS",
-  "description": "Microsoft Surface inspired theme",
+  "description": "Microsoft Surface inspired theme (Blue and Gray)",
   "dark": {
     "primary": "#0078D4",
     "primaryText": "#FFFFFF",
@@ -24,8 +24,8 @@
     "info": "#0078D4"
   },
   "light": {
-    "primary": "#0078D4",
-    "primaryText": "#FFFFFF",
+    "primary": "#00BCF2",
+    "primaryText": "#000000",
     "primaryContainer": "#E6F0FA",
     "secondary": "#5C5C5C",
     "surface": "#FFFFFF",
