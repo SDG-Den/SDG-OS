@@ -1,7 +1,7 @@
 {
   "currentThemeName": "custom",
-  "currentThemeCategory": "registry",
-  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/retrobox/theme.json",
+  "currentThemeCategory": "custom",
+  "customThemeFile": "/home/den/.config/DankMaterialShell/themes/system76/theme.json",
   "registryThemeVariants": {
     "rosePine": "rosePine",
     "catppuccin": {
@@ -12,7 +12,20 @@
     },
     "everforest": "medium",
     "flexoki": "orange",
-    "gruvboxMaterial": "hard"
+    "gruvboxMaterial": "hard",
+    "gnomeAdwaita": "red",
+    "modus": {
+      "dark": {
+        "flavor": "vivendi",
+        "accent": "cyan"
+      }
+    },
+    "amoledBlack": {
+      "dark": {
+        "flavor": "black",
+        "accent": "red"
+      }
+    }
   },
   "matugenScheme": "scheme-vibrant",
   "runUserMatugenTemplates": true,
