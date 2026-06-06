@@ -23,7 +23,7 @@
     "amoledBlack": {
       "dark": {
         "flavor": "black",
-        "accent": "red"
+        "accent": "turquoise"
       }
     }
   },
@@ -819,7 +819,7 @@
       "id": "bar1780101400641",
       "name": "Bar 4",
       "enabled": true,
-      "position": 3,
+      "position": 2,
       "screenPreferences": [
         "all"
       ],

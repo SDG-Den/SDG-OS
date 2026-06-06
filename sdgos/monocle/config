@@ -1,0 +1,34 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "fixed-center": "true",
+    "margin-top": -8,
+    "margin-bottom": 0,
+    "margin-left": 5,
+    "margin-right": 5,    
+    "spacing": 0,
+
+    // Load Modules
+    "include": [
+        "~/.config/sdgos/monocle/modules.json"
+    ],    
+    "modules-left": [
+        "custom/daemon",
+        "custom/window1",
+        "custom/window2",
+        "custom/window3",
+        "custom/window4",
+        "custom/window5",
+        "custom/window6",
+        "custom/window7",
+        "custom/window8",
+        "custom/window9",
+        "custom/window10",
+
+
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+    ]
+}
