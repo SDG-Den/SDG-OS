@@ -8,7 +8,7 @@
 	font-size: 97%;
 	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
     border: 0px;
-    padding-top: 4px;
+    padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 4px;
     background-color: @surface;
