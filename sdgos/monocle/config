@@ -2,11 +2,12 @@
     "layer": "top",
     "position": "bottom",
     "fixed-center": "true",
-    "margin-top": -8,
-    "margin-bottom": 0,
-    "margin-left": 5,
-    "margin-right": 5,    
-    "spacing": 0,
+    "output": "HDMI-A-1",
+    "margin-top": 0,
+    "margin-bottom": -2,
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 3,
 
     // Load Modules
     "include": [

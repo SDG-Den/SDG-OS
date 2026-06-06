@@ -9,7 +9,8 @@
         "tooltip-format": "daemon is running, click to refresh",
         "on-click": "~/.config/sdgos/monocle/indexer.sh",
         "exec": "~/.config/sdgos/monocle/indexer.sh",
-        "interval": 5
+        "max-length": 20,
+        "interval": 1
 
     },
 
@@ -19,7 +20,8 @@
         "tooltip-format": "window 1: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 1",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 1",
-        "interval": 2.1
+        "max-length": 20,
+        "interval": 1.5
 
     },
     "custom/window2": {
@@ -28,7 +30,8 @@
         "tooltip-format": "window 2: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 2",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 2",
-        "interval": 2.1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -38,7 +41,8 @@
         "tooltip-format": "window 3: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 3",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 3",
-        "interval": 2.1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -48,7 +52,8 @@
         "tooltip-format": "window 4: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 4",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 4",
-        "interval": 2.1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -58,7 +63,8 @@
         "tooltip-format": "window 5: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 5",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 5",
-        "interval": 1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -68,7 +74,8 @@
         "tooltip-format": "window 6: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 6",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 6",
-        "interval": 1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -78,7 +85,8 @@
         "tooltip-format": "window 7: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 7",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 7",
-        "interval": 1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -88,7 +96,8 @@
         "tooltip-format": "window 8: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 8",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 8",
-        "interval": 1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -98,7 +107,8 @@
         "tooltip-format": "window 9: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 9",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 9",
-        "interval": 1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 
@@ -108,7 +118,8 @@
         "tooltip-format": "window 10: {text}",
         "on-click": "~/.config/sdgos/monocle/focuswindow.sh 10",
         "exec": "~/.config/sdgos/monocle/fetchwindow.sh 10",
-        "interval": 1
+        "max-length": 20,
+        "interval": 1.5
 
     },
 

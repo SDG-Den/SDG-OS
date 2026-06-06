@@ -69,3 +69,8 @@ post_hook = 'adwaita-steam-gtk -i || true'
 [templates.obsidian]
 input_path = '~/.config/matugen/templates/InioX/obsidian.css'
 output_path = '~/.config/matugen/templates-out/obsidian.css'
+
+
+[templates.monocle]
+input_path = '~/.config/matugen/templates/InioX/colors.css'
+output_path = '~/.config/sdgos/monocle/colors.css'

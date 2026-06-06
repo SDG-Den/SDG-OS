@@ -2,6 +2,10 @@
 
 
 INDEX="$1"
+while [ -e ~/.config/monocle.lock ]; do
+    sleep 0.01
+    echo "sleeping"
+done
 
 ACTIVEMON=$(mmsg get all-monitors | jq '.monitors[] | select(.active == true) | .name' -r)
 echo "activemon is $ACTIVEMON"
@@ -10,6 +14,8 @@ echo "activetag is $ACTIVETAG"
 
 WINDOWID=$(cat ~/.config/monocle.state | grep -e "index:$INDEX" | cut -d'\' -f3)
 WINDOWtitle=$(cat ~/.config/monocle.state | grep -e "index:$INDEX" | cut -d'\' -f2)
+
+
 echo "moving window $WINDOWID"
 
 mmsg dispatch zoom client,$WINDOWID

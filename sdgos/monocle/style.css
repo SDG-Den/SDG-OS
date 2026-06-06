@@ -1,3 +1,5 @@
+@import "./colors.css";
+
 * {
 	font-family: "JetBrainsMono Nerd Font";
 	font-weight: bold;
@@ -6,8 +8,10 @@
 	font-size: 97%;
 	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
     border: 0px;
-    padding: 2px;
-    background-color: black;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    background-color: @surface;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -32,9 +36,9 @@
 #custom-button-zoomin,
 #custom-button-zoomout,
 #custom-button-fit {
-    background-color: #333333;
-    color: white;
-    border: 1px;
+    background-color: @surface_container;
+    color: @primary;
+    border: 0px;
     border-style: solid;
     border-color: white;
     border-radius: 10px;
