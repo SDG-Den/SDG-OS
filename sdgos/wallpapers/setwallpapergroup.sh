@@ -19,7 +19,6 @@ sleep 0.5
 dms ipc call wallpaper next
 dms ipc call wallpaper prev
 
-
 ## todo: add other settings
 
 # fetch info from file
@@ -41,10 +40,12 @@ dms ipc call settings set matugenScheme scheme-$Matugen
 
 # dark/light mode
 dms ipc call theme $Mode
+sleep 1
 # generic > color 
 dms ipc call settings set currentThemeName $GenericColor
 # browse > preset
 dms ipc call settings set customThemeFile "/home/$(whoami)/.config/DankMaterialShell/themes/$Preset/theme.json"
+sleep 1
 sleep 0.5
 dms kill
 mmsg dispatch spawn_shell,dms run
@@ -52,7 +53,7 @@ sleep 4
 dms ipc call theme toggle
 dms ipc call theme toggle
 dms ipc call theme $Mode
-sleep 3
+sleep 2
 mmsg dispatch reload_config
 notify-send "theme $SELECTED applied" "you may have to manually reload ghostty (ctrl+r)"
 #read -n 1
