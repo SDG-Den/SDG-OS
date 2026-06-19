@@ -6,7 +6,7 @@ command = /bin/zsh
 
 initial-command = /bin/zsh -c ~/.config/sdgos/fastfetch/fetch.sh && echo "" && ~/.config/sdgos/tips/tips.sh && echo "[SDG-OS Tips]: use the 'tipme' command for random tips" && echo "[SDG-OS Tips]: 'alltips' to see all tips in a searchable interface" && echo "[SDG-OS Tips]: 'tipme toggle' to toggle between normal mode and cowsay mode" && echo "[SDG-OS Tips]: or the SUPER+0 keybind to be notified of a random tip" && zsh 
 
-scrollback-limit = 999999
+scrollback-limit = 1048576000
 
 link-url = true
 link-previews = true

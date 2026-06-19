@@ -223,7 +223,7 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "wifi",
-  "iconTheme": "Tela-circle-black-light",
+  "iconTheme": "Tela-circle-black",
   "cursorSettings": {
     "theme": "System Default",
     "size": 18,
@@ -428,7 +428,11 @@
   "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "system",
-  "screenPreferences": {},
+  "screenPreferences": {
+    "wallpaper": [
+      "all"
+    ]
+  },
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},

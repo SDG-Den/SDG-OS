@@ -9,7 +9,7 @@ CMD=$(cat ~/.config/sdgos/tuis/layouts.list | grep -e "$SELECTED" | cut -d '|' -
 
 eval $CMD
 
-if [[ "$SELECTED" == "Monocle " ]] || [[ "$SELECTED" == "Deck - horizontal " ]] || [[ "$SELECTED" == "Deck - vertical " ]]; then
+if [[ "$SELECTED" == "Deck - horizontal " ]] || [[ "$SELECTED" == "Deck - vertical " ]]; then
     pkill -9 waybar
     mmsg dispatch spawn_shell,'waybar -c ~/.config/sdgos/monocle/config -s ~/.config/sdgos/monocle/style.css'
 else
