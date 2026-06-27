@@ -1,0 +1,3 @@
+[templates.wayshellbars]
+input_path = '~/.config/sdgos/wayshell/colors.css'
+output_path = '~/.config/sdgos/wayshell/configs/colors.css'
