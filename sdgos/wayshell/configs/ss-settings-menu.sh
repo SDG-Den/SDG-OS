@@ -1,5 +1,5 @@
 #!/bin/bash
-state_file=$HOME/.config/sdgos/wayshell/screenshot.state
+state_file=$HOME/.config/screenshot.state
 
 if [ ! -f "$state_file" ]; then
     mkdir -p "$(dirname "$state_file")"

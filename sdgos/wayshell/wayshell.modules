@@ -26,18 +26,17 @@ zone_topcenter|mmsg dispatch spawn_shell,waybar -c ~/.config/sdgos/wayshell/conf
 
 # monocle bar
 monocle|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh hdmi|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-hdmi -s /home/den/.config/sdgos/monocle/style.css"|layout|M,HDMI-A-1
-monocle_dp1|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp1|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp1 -s /home/den/.config/sdgos/monocle/style.css"|M,DP-1
-monocle_dp3|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp3|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp3 -s /home/den/.config/sdgos/monocle/style.css"|layout|M,DP-3
-
+monocle-dp1|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp1|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp1 -s /home/den/.config/sdgos/monocle/style.css"|layout|M,DP-1
+monocle-dp3|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp3|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp3 -s /home/den/.config/sdgos/monocle/style.css"|layout|M,DP-3
 
 # monocle bar on deck
 deck-hdmi|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh hdmi|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-hdmi -s /home/den/.config/sdgos/monocle/style.css"|layout|K,HDMI-A-1
-deck-dp1|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp1|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp1 -s /home/den/.config/sdgos/monocle/style.css"|K,DP-1
+deck-dp1|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp1|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp1 -s /home/den/.config/sdgos/monocle/style.css"|layout|K,DP-1
 deck-dp3|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp3|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp3 -s /home/den/.config/sdgos/monocle/style.css"|layout|K,DP-3
 
 # monocle bar on vertical deck
 vdeck-hdmi|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh hdmi|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-hdmi -s /home/den/.config/sdgos/monocle/style.css"|layout|VK,HDMI-A-1
-vdeck-dp1|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp1|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp1 -s /home/den/.config/sdgos/monocle/style.css"|VK,DP-1
+vdeck-dp1|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp1|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp1 -s /home/den/.config/sdgos/monocle/style.css"|layout|VK,DP-1
 vdeck-dp3|mmsg dispatch spawn_shell,~/.config/sdgos/monocle/monocle.sh dp3|pkill -f "waybar -c /home/$(whoami)/.config/sdgos/monocle/config-dp3 -s /home/den/.config/sdgos/monocle/style.css"|layout|VK,DP-3
 
 
