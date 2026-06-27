@@ -7,8 +7,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "daemon is running, click to refresh",
-        "on-click": "~/.config/sdgos/monocle/indexer.sh",
-        "exec": "~/.config/sdgos/monocle/indexer.sh",
+        "on-click": "~/.config/sdgos/monocle/indexer.sh DP-3",
+        "exec": "~/.config/sdgos/monocle/indexer.sh DP-3",
         "max-length": 20,
         "interval": 1
 
@@ -18,8 +18,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 1: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 1",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 1",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 1 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 1 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -28,8 +28,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 2: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 2",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 2",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 2 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 2 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -39,8 +39,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 3: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 3",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 3",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 3 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 3 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -50,8 +50,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 4: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 4",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 4",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 4 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 4 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -61,8 +61,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 5: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 5",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 5",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 5 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 5 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -72,8 +72,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 6: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 6",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 6",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 6 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 6 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -83,8 +83,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 7: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 7",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 7",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 7 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 7 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -94,8 +94,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 8: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 8",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 8",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 8 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 8 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -105,8 +105,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 9: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 9",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 9",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 9 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 9 DP-3",
         "max-length": 20,
         "interval": 1.5
 
@@ -116,8 +116,8 @@
         "tooltip": true,
         "format":"{text}",
         "tooltip-format": "window 10: {text}",
-        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 10",
-        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 10",
+        "on-click": "~/.config/sdgos/monocle/focuswindow.sh 10 DP-3",
+        "exec": "~/.config/sdgos/monocle/fetchwindow.sh 10 DP-3",
         "max-length": 20,
         "interval": 1.5
 

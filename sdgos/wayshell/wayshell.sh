@@ -32,7 +32,14 @@ trap cleanup SIGTERM SIGINT EXIT
 # --- Config ---
 ON_DELAY=$(grep -oP 'on_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "100")
 OFF_DELAY=$(grep -oP 'off_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "100")
-echo "Config: on_delay=$ON_DELAY, off_delay=$OFF_DELAY"
+
+ZONE_ON_DELAY=$(grep -oP 'zone_on_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "$ON_DELAY")
+ZONE_OFF_DELAY=$(grep -oP 'zone_off_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "$OFF_DELAY")
+LAYOUT_ON_DELAY=$(grep -oP 'layout_on_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "$ON_DELAY")
+LAYOUT_OFF_DELAY=$(grep -oP 'layout_off_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "$OFF_DELAY")
+FOCUSED_ON_DELAY=$(grep -oP 'focused_on_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "$ON_DELAY")
+FOCUSED_OFF_DELAY=$(grep -oP 'focused_off_delay=\K[0-9]+' "$CONFIG_FILE" 2>/dev/null || echo "$OFF_DELAY")
+echo "Config: on_delay=$ON_DELAY, off_delay=$OFF_DELAY zone_on=$ZONE_ON_DELAY zone_off=$ZONE_OFF_DELAY layout_on=$LAYOUT_ON_DELAY layout_off=$LAYOUT_OFF_DELAY focused_on=$FOCUSED_ON_DELAY focused_off=$FOCUSED_OFF_DELAY"
 
 # --- Storage ---
 declare -A MODULES
@@ -45,10 +52,10 @@ parse_modules() {
     echo "Parsing modules from $MODULES_FILE"
     [[ -f "$MODULES_FILE" ]] || { echo "ERROR: Modules file not found"; exit 1; }
     local count=0
-    while IFS=',' read -r name onexec offexec type args; do
+    while IFS='|' read -r name onexec offexec type args; do
         name="${name// /}"
         [[ "$name" =~ ^#.*$ || -z "$name" ]] && continue
-        MODULES["$name"]="$onexec,$offexec,$type,$args"
+        MODULES["$name"]="$onexec|$offexec|$type|$args"
         MODULE_STATES["$name"]="disabled"
         ((count++))
         echo "  [$count] $name ($type)"
@@ -61,7 +68,7 @@ parse_modules
 modules_by_type() {
     local t="$1"
     for n in "${!MODULES[@]}"; do
-        IFS=',' read -r _ _ mt _ <<< "${MODULES[$n]}"
+        IFS='|' read -r _ _ mt _ <<< "${MODULES[$n]}"
         [[ "$mt" == "$t" ]] && echo "$n"
     done
 }
@@ -89,17 +96,24 @@ get_monitor_offset() {
 # --- Check debounce timers and fire actions ---
 # Called every ~50ms from the main event loop.
 check_fires() {
-    local now name onexec offexec
+    local now name onexec offexec mtype on_delay off_delay
     now=$(date +%s%3N)
 
     # Pending ON fires
     for name in "${!MODULE_ENTER_TS[@]}"; do
         local st=${MODULE_STATES[$name]}
         [[ "$st" != "pending_on" && "$st" != "pending_off" ]] && continue
-        if (( now - MODULE_ENTER_TS[$name] >= ON_DELAY )); then
+        IFS='|' read -r _ _ mtype _ <<< "${MODULES[$name]}"
+        case "$mtype" in
+            zone)    on_delay=$ZONE_ON_DELAY ;;
+            layout)  on_delay=$LAYOUT_ON_DELAY ;;
+            focused) on_delay=$FOCUSED_ON_DELAY ;;
+            *)       on_delay=$ON_DELAY ;;
+        esac
+        if (( now - MODULE_ENTER_TS[$name] >= on_delay )); then
             if [[ "$st" == "pending_on" ]]; then
                 MODULE_STATES["$name"]="enabled"
-                IFS=',' read -r onexec _ _ _ <<< "${MODULES[$name]}"
+                IFS='|' read -r onexec _ _ _ <<< "${MODULES[$name]}"
                 echo "ON  $name"
                 eval "$onexec" &
             fi
@@ -111,9 +125,16 @@ check_fires() {
     for name in "${!MODULE_EXIT_TS[@]}"; do
         local st=${MODULE_STATES[$name]}
         [[ "$st" != "pending_off" && "$st" != "enabled" ]] && continue
-        if (( now - MODULE_EXIT_TS[$name] >= OFF_DELAY )); then
+        IFS='|' read -r _ _ mtype _ <<< "${MODULES[$name]}"
+        case "$mtype" in
+            zone)    off_delay=$ZONE_OFF_DELAY ;;
+            layout)  off_delay=$LAYOUT_OFF_DELAY ;;
+            focused) off_delay=$FOCUSED_OFF_DELAY ;;
+            *)       off_delay=$OFF_DELAY ;;
+        esac
+        if (( now - MODULE_EXIT_TS[$name] >= off_delay )); then
             MODULE_STATES["$name"]="disabled"
-            IFS=',' read -r _ offexec _ _ <<< "${MODULES[$name]}"
+            IFS='|' read -r _ offexec _ _ <<< "${MODULES[$name]}"
             echo "OFF $name"
             eval "$offexec" &
             unset "MODULE_EXIT_TS[$name]"
@@ -159,7 +180,7 @@ process_zone_event() {
 
     while IFS= read -r module_name; do
         [[ -z "$module_name" ]] && continue
-        IFS=',' read -r onexec offexec _ args <<< "${MODULES[$module_name]}"
+        IFS='|' read -r onexec offexec _ args <<< "${MODULES[$module_name]}"
         IFS=',' read -r x1 y1 x2 y2 <<< "$args"
         local ax1=$(( x1 + mx )) ay1=$(( y1 + my ))
         local ax2=$(( x2 + mx )) ay2=$(( y2 + my ))
@@ -195,7 +216,7 @@ process_layout_event() {
     local now; now=$(date +%s%3N)
     while IFS= read -r module_name; do
         [[ -z "$module_name" ]] && continue
-        IFS=',' read -r onexec offexec _ args <<< "${MODULES[$module_name]}"
+        IFS='|' read -r onexec offexec _ args <<< "${MODULES[$module_name]}"
         # args = "layout_name" or "layout_name,monitor_name"
         local expected_layout="${args%%,*}"
         local expected_monitor=""
@@ -223,7 +244,7 @@ process_focused_event() {
     local now; now=$(date +%s%3N)
     while IFS= read -r module_name; do
         [[ -z "$module_name" ]] && continue
-        IFS=',' read -r onexec offexec _ expected <<< "${MODULES[$module_name]}"
+        IFS='|' read -r onexec offexec _ expected <<< "${MODULES[$module_name]}"
         [[ "$app_id" != "$expected" ]] && continue
         local st=${MODULE_STATES[$module_name]}
         if [[ "$state" == "focused" && "$st" == "disabled" ]]; then

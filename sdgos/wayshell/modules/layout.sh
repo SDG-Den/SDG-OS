@@ -15,15 +15,11 @@
 #   - mmsg
 #===============================================================================
 
-declare -A ACTIVE_LAYOUTS
-
-make_key() {
-    echo "${1}:${2}:${3}"
-}
+declare -A MONITOR_LAYOUT
 
 process_tags_update() {
     local json="$1"
-    local monitors monitor tag layout is_active key new_keys=""
+    local monitors monitor tag layout is_active
 
     monitors=$(jq -c '.all_tags[]' <<< "$json" 2>/dev/null)
 
@@ -37,25 +33,19 @@ process_tags_update() {
             tag=$(jq -r '.index' <<< "$tag_entry" 2>/dev/null)
             layout=$(jq -r '.layout' <<< "$tag_entry" 2>/dev/null)
             is_active=$(jq -r '.is_active' <<< "$tag_entry" 2>/dev/null)
-            key=$(make_key "$monitor" "$tag" "$layout")
-            new_keys="$new_keys $key"
 
             if [[ "$is_active" == "true" ]]; then
-                if [[ -z "${ACTIVE_LAYOUTS[$key]}" ]]; then
+                local prev="${MONITOR_LAYOUT[$monitor]}"
+                if [[ "$prev" != "$layout" ]]; then
+                    if [[ -n "$prev" ]]; then
+                        echo "{\"layout\":\"$prev\",\"state\":\"inactive\",\"monitor\":\"$monitor\",\"tag\":$tag}"
+                    fi
                     echo "{\"layout\":\"$layout\",\"state\":\"active\",\"monitor\":\"$monitor\",\"tag\":$tag}"
+                    MONITOR_LAYOUT["$monitor"]="$layout"
                 fi
-                ACTIVE_LAYOUTS["$key"]="active"
             fi
         done < <(jq -c '.tags[]' <<< "$entry" 2>/dev/null)
     done <<< "$monitors"
-
-    for key in "${!ACTIVE_LAYOUTS[@]}"; do
-        if [[ ! " $new_keys " =~ $key ]]; then
-            IFS=':' read -r monitor tag layout <<< "$key"
-            echo "{\"layout\":\"$layout\",\"state\":\"inactive\",\"monitor\":\"$monitor\",\"tag\":$tag}"
-            unset "ACTIVE_LAYOUTS[$key]"
-        fi
-    done
 }
 
 if ! command -v mmsg &>/dev/null || ! command -v jq &>/dev/null; then

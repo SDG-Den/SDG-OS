@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "bottom",
     "fixed-center": "true",
-    "output": "HDMI-A-1",
+    "output": "DP-3",
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
@@ -11,7 +11,7 @@
 
     // Load Modules
     "include": [
-        "~/.config/sdgos/monocle/modules.json"
+        "~/.config/sdgos/monocle/modules-dp3.json"
     ],    
     "modules-left": [
         "custom/daemon",

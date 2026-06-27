@@ -86,3 +86,8 @@ output_path = '~/.config/caffyne-shell/style/colors.css'
 [templates.wayshell]
 input_path = '~/.config/matugen/templates/InioX/colors.css'
 output_path = '~/.config/sdgos/wayshell/colors.css'
+
+
+[templates.wayshellbars]
+input_path = '~/.config/matugen/templates/InioX/colors.css'
+output_path = '~/.config/sdgos/wayshell/configs/colors.css'
