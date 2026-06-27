@@ -82,3 +82,7 @@ output_path = '~/.config/sdgos/monocle/colors.css'
 [templates.caffyne]
 input_path = '~/.config/caffyne-shell/matugen/caffyne-shell-colors.css'
 output_path = '~/.config/caffyne-shell/style/colors.css'
+
+[templates.wayshell]
+input_path = '~/.config/matugen/templates/InioX/colors.css'
+output_path = '~/.config/sdgos/wayshell/colors.css'
